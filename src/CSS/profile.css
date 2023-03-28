@@ -1,0 +1,119 @@
+.section-profile {
+  padding-bottom: 10vh;
+  padding: 20px;
+  padding-left: 150px;
+  padding-right: 150px;
+  width: 100vw;
+  height: 70vh;
+  min-height: 70vh;
+  border: 2px solid black;
+  background-color: #4832d3;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.section-profile h1 {
+  color: #cbf281;
+  font-family: "Inter";
+  font-size: 48px;
+  letter-spacing: 2px;
+  line-height: 72px;
+}
+.profile-left {
+  transform: translateY(-3vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-left span {
+  color: black;
+  font-family: "Inter";
+}
+.profile-left p {
+  font-family: "Inter";
+  font-size: 15px;
+  margin-top: 20px;
+  font-weight: 200;
+  color: white;
+}
+#profilePic {
+  border-radius: 15px;
+  height: 300px;
+}
+.section-profile h3 {
+  color: white;
+  font-family: "Inter";
+  font-size: 30px;
+  letter-spacing: 2px;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.About-Me p {
+  max-width: 25vw;
+  color: white;
+  font-size: 15px;
+  font-family: "Inter";
+  padding-top: 25px;
+}
+/* responsive */
+
+@media only screen and (max-width: 1160px) {
+  .section-profile {
+    padding-top: 0vh;
+    height: 180vh;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: unset;
+  }
+  .profile-left {
+    transform: unset;
+    width: 80vw;
+  }
+  .section-profile h1 {
+    transform: unset;
+  }
+  .About-Me h3 {
+    margin-top: 0px;
+  }
+  .About-Me p {
+    width: 100vw;
+    margin-top: 5vh;
+    max-width: unset;
+  }
+}
+@media only screen and (max-width: 1160px) {
+  .section-profile {
+    padding-top: -1vh;
+    margin-inline-start: 0%;
+    height: 150vh;
+    min-height: 100vh;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: unset;
+    transform: translateY(10vh);
+  }
+  .profile-left {
+    transform: unset;
+    width: 1180vw;
+    height: 150px;
+    padding-top: -10vh;
+  }
+  .section-profile h1 {
+    transform: unset;
+  }
+  .About-Me h3 {
+    padding-bottom: 10px;
+  }
+  .About-Me p {
+    min-height: min-content;
+    width: 30vw;
+    margin-top: 1vh;
+    padding-bottom: -20vh;
+    padding-block: 2px;
+    padding-top: -20vh;
+  }
+}

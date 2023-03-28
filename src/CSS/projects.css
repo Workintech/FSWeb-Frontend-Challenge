@@ -1,0 +1,115 @@
+.section-project {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #cbf281;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.section-profile-header {
+  color: #4832d3;
+  font-family: "Inter";
+  font-size: 58px;
+  letter-spacing: 2px;
+  width: 70vw;
+  line-height: 72px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.project-card-container {
+  height: 360px;
+
+  width: 70vw;
+  margin: 10px;
+  background-color: white;
+  display: flex;
+  border-radius: 25px;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+
+.text-card {
+  display: flex;
+
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+.text-card h2 {
+  color: #4832d3;
+  font-family: "Inter";
+  font-size: 38px;
+  font-weight: 900;
+  margin-top: 6%;
+}
+.description-project {
+  font-size: 16px;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.tags--project {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.text-project-tag {
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: -0.05em;
+  text-align: left;
+  padding: 8px 18px 9px;
+  gap: 10px;
+  width: 72px;
+  height: 31px;
+  color: white;
+  background-color: #4832d3;
+  border-radius: 23px;
+  margin-right: 5px;
+}
+.links-projects {
+  display: flex;
+  flex-direction: row;
+}
+.links-projects a {
+  font-family: "Inter";
+  line-height: 19px;
+  font-size: 15px;
+  margin-right: 15px;
+  color: black;
+}
+/* Responsive */
+@media only screen and (max-width: 950px) {
+  .section-project {
+    flex-direction: column;
+    align-items: center;
+
+    justify-content: space-around;
+  }
+  .project-card-container img {
+    max-width: 360px;
+    max-height: 360px;
+    display: none;
+  }
+  .project-card-container {
+    width: 360px;
+    background-color: white;
+    flex-direction: column;
+  }
+  .text-card {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+  }
+  .section-profile-header {
+    transform: translateX(15vw);
+  }
+}
