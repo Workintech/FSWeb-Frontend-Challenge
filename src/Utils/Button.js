@@ -2,19 +2,19 @@ import React from "react";
 
 const Button = () => {
   return (
-    <div className="buttonContainer">
+    <div class="buttonContainer" id="buttonContainer">
       <button>
-        <a href="https://www.linkedin.com/in/bahar-gumuser-83b0801b2/">
+        <a
+          href="https://www.linkedin.com/in/bahar-gumuser-83b0801b2/"
+          target="_blank"
+        >
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
-        <p>Linkedin</p>
       </button>
       <button>
-        <a href="https://github.com/bahargumuser">
+        <a href="https://github.com/bahargumuser" target="_blank">
           <i class="fa-brands fa-github"></i>
         </a>
-
-        <p>GitHub</p>
       </button>
     </div>
   );

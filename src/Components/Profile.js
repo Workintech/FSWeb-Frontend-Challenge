@@ -4,34 +4,39 @@ import profilePic from "../assets/image 2.png";
 
 const Profile = () => {
   return (
-    <section className="section-profile">
+    <section class="section-profile">
       <div className="profile-left">
         <h1>Profile</h1>
-        <h3>Basic Information</h3>
+        <h2>Basic Information</h2>
         <p>
-          <span>Doğum Tarihi: </span>24.03.1996{" "}
+          <span>Birthyear: </span>1996{" "}
         </p>
         <p>
-          <span>İkamet Şehri: </span>Ankara
+          <span>Country: </span>Turkey
         </p>
         <p>
-          <span>Eğitim Durumu: </span>Hacettepe Ünv. Biyoloji Lisans, 2016{" "}
+          <span>E-mail: </span>bahargumuser@gmail.com
         </p>
         <p>
-          <span>Tercih Ettiği Rol: </span>Frontend, UI
+          <span>Educational Status: </span>Ankara University, 2021{" "}
+        </p>
+        <p>
+          <span>Preferred Job: </span> Junior Developer
         </p>
       </div>
       <img src={profilePic} alt="profile" id="profilePic" />
 
       <div className="About-Me">
-        <h3>About Me</h3>
+        <h3 /* className="tc-[#cbf281]" */>About Me</h3>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut,
-          odit laborum aliquam voluptatum nisi mollitia.{" "}
+          I am a person who has built my life on new information and new
+          discoveries. After graduating from university, I became interested in
+          software and wanted to learn new things.{" "}
         </p>
         <p>
-          Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-          deserunt quam temporibus cumque magnam!
+          Over time, software became a passion for me. I used this passion for
+          my professional purposes and decided to turn it into a business. I
+          improve myself a little bit more every day to be successful.
         </p>
       </div>
     </section>

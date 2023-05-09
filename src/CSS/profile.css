@@ -4,10 +4,9 @@
   padding-left: 150px;
   padding-right: 150px;
   width: 100vw;
-  height: 70vh;
+  height: 100vh;
   min-height: 70vh;
-  border: 2px solid black;
-  background-color: #4832d3;
+  background-color: #c4b5fd;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -15,7 +14,7 @@
 }
 .section-profile h1 {
   color: #cbf281;
-  font-family: "Inter";
+  font-family: monospace;
   font-size: 48px;
   letter-spacing: 2px;
   line-height: 72px;
@@ -26,20 +25,25 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.profile-left h2 {
+  font-family: monospace;
+  font-size: 30px;
+}
 .profile-left span {
-  color: black;
-  font-family: "Inter";
+  color: #cbf281;
+  font-family: monospace;
 }
 .profile-left p {
-  font-family: "Inter";
+  font-family: monospace;
   font-size: 15px;
   margin-top: 20px;
   font-weight: 200;
-  color: white;
+  color: rgb(30, 30, 30);
 }
 #profilePic {
   border-radius: 15px;
   height: 300px;
+  filter: drop-shadow(8px 4px 10px gray);
 }
 .section-profile h3 {
   color: white;
@@ -49,11 +53,14 @@
   line-height: 30px;
   margin-top: 20px;
 }
+.About-Me h3 {
+  color: #cbf281;
+}
 .About-Me p {
   max-width: 25vw;
-  color: white;
+  color: rgb(9, 9, 9);
   font-size: 15px;
-  font-family: "Inter";
+  font-family: monospace;
   padding-top: 25px;
 }
 /* responsive */
