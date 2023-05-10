@@ -73,6 +73,7 @@
   }
   .skills-set p {
     font-size: 18px;
+    transform: translateY(25px) translateX(-5px);
   }
   .skills-set {
     max-width: 50vw;
@@ -83,5 +84,16 @@
   }
   #smallFont {
     font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  #section-skills {
+    flex-direction: column;
+    max-height: 50px;
+    min-height: 60vh;
+    max-height: 60vh;
+    margin: 0px;
+    padding: 0px;
   }
 }
