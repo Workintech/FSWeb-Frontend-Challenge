@@ -132,64 +132,64 @@ button {
     align-items: center;
     flex-direction: column-reverse;
     transform: translateY(-100vw) translateX(500vw) translateZ(-900);
-
+    height: auto;
     display: inline;
     scale: 0.5;
-    /*     max-width: 100%;
-    height: auto; */
+    max-width: 100%;
+    height: auto;
   }
   .hero {
-    /*    width: 100vw;
+    width: 100vw;
     min-height: 100vh;
-    margin: 0px; */
-    /*     padding: 100px; */
-    /* flex-direction: column-reverse;
+    margin: 0px;
+    padding: 100px;
+    flex-direction: column-reverse;
     justify-content: space-around;
-    align-items: center; */
+    align-items: center;
   }
   #buttonContainer {
-    /*     transform: translateX(-1559vw);
-    align-items: baseline; */
+    transform: translateX(-1559vw);
+    align-items: baseline;
   }
   .headerImage img {
-    /*   transform: unset;
+    transform: unset;
     padding: 0px;
     margin: 0px;
     width: 350px;
     max-width: 100%;
     display: none;
-    height: auto; */
+    height: auto;
 
-    /*     transform: translateY(-300vw) translateZ(-100vw); */
+    transform: translateY(-300vw) translateZ(-100vw);
   }
   header {
-    /*     display: none; */
-    /*   color: #3730a3; */
+    /*   display: none; 
+      color: #3730a3;  */
     text-align: left;
     transform: translateX(-155vw);
   }
   .heroleft {
-    /*   width: 100%;
+    width: 100%;
     text-align: center;
     margin: 0px;
     display: flex;
     flex-direction: column;
-    align-items: center; */
+    align-items: center;
   }
   .heroleft h1 {
-    /*    width: unset;
+    width: unset;
     height: unset;
     color: #cbf281;
-    text-align: left; */
+    text-align: left;
   }
   .heroleft p {
-    /*  margin-top: 2vh;
+    margin-top: 2vh;
     width: unset;
-    height: unset; */
+    height: unset;
   }
   #hiddenAlmila {
-    /*     display: unset;
+    display: unset;
     margin: 0px;
-    padding: 0px; */
+    padding: 0px;
   }
 }
