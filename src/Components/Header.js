@@ -1,34 +1,32 @@
 import React from "react";
-import headerPic from "../assets/hero-right.png";
-import "../CSS/header.css";
+import headerPic from "../assets/a.JPG";
+
 import Button from "../Utils/Button";
-import "../CSS/update.css";
 
 const Header = () => {
   return (
-    <section className="bg-violet-300 p-40 m-0 rounded object-contain items-center flex-wrap max-w-100">
-      <div className="hero">
-        <header
-          className="underline font-mono mr-2 pr-3 text-left"
-          id="headerFontUpBG"
-        >
+    <section className="min-h-screen bg-violet-300 p-20 m-0 rounded items-center flex flex-3 lg:flex-row flex-col-reverse">
+      <div className=" flex flex-2 flex-col">
+        <header className="underline font-mono text-center lg:text-left text-[#cbf281] text-[22px] font-bold m-14">
           Bahar Gümüşer
         </header>
-        <div class="heroleft">
-          <h1 className="font-mono text-4xl w-1/2" id="headerFontUp">
+        <div className="m-14 ">
+          <h1 className="font-mono text-center lg:text-left text-5xl text-[#cbf281] font-bold pb-10">
             I'm a Full Stack Developer...
           </h1>
-          <p
-            className="heroleftP"
-            class="font-mono w-1/2 font-medium leading-7 text-xl"
-            id="headerFontUp"
-          >
+          <p className="font-mono font-[12px] leading-7 text-center lg:text-left pt-10  ">
             Hello, if you are looking for a junior developer and my profile
             interests you, you can contact me!
           </p>
+
           <Button />
         </div>
-        <img src={headerPic} alt="Header Picture" className="headerImage" />
+      </div>
+      <div className="flex-1 flex">
+        <img
+          src={headerPic}
+          className="max-w-[12rem] aspect-auto drop-shadow-xl rounded-[2rem]"
+        />
       </div>
     </section>
   );

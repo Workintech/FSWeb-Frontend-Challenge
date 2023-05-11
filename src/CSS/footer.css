@@ -48,7 +48,7 @@
 
   color: #c4b5fd;
   text-align: center;
-  transform: translateX(43vh);
+
   margin-top: -1.5%;
 }
 #sendMeMsc {
@@ -58,9 +58,15 @@
 @media only screen and (max-width: 960px) {
   .section-footer {
     text-align: center;
+
+    padding-right: 30px;
+    flex-direction: column;
+
+    min-height: 100vh;
+    max-height: 60vh;
   }
   .icons {
-    transform: translateX(41vh);
     display: flex;
+    flex-direction: row-reverse;
   }
 }

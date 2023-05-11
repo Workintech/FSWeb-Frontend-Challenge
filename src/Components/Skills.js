@@ -11,7 +11,7 @@ const Skills = () => {
   return (
     <section
       className="section-skills"
-      className="min-h-screen items-center bg-[#cbf281]"
+      class="min-h-screen items-center bg-[#cbf281]"
     >
       <h2
         class="header-skills"

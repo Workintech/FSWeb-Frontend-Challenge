@@ -1,6 +1,5 @@
 import React from "react";
 import "../CSS/projects.css";
-
 import ProjectsArray from "../Utils/ProjectsArray";
 
 const Profile = () => {

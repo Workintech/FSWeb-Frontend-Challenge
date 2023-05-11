@@ -8,7 +8,6 @@
   flex-wrap: wrap;
   padding-top: 4vh;
   padding-bottom: 10vh;
-  max-height: 100vh;
 }
 
 .section-profile-header {
@@ -94,7 +93,7 @@
 }
 .links-projects {
   /*  display: flex;
-  flex-direction: row; */
+    flex-direction: row; */
   text-align: center;
 }
 .links-projects a {
@@ -107,30 +106,73 @@
   margin-right: 30px;
 }
 /* Responsive */
-@media only screen and (max-width: 950px) {
+@media only screen and (max-width: 1160px) {
   .section-project {
-    flex-direction: column;
-    align-items: center;
-
-    justify-content: space-around;
-  }
-  .project-card-container img {
-    max-width: 360px;
-    max-height: 360px;
-    display: none;
-  }
-  .project-card-container {
-    width: 360px;
-    background-color: white;
-    flex-direction: column;
-  }
-  .text-card {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    height: 100%;
+    min-height: 230vh;
   }
   .section-profile-header {
-    transform: translateX(15vw);
+    align-items: center;
+  }
+  .project-card-container {
+    text-align: left;
+    justify-content: space-between;
+    filter: drop-shadow(8px 4px 10px gray);
+
+    padding-right: 20px;
+    flex-direction: column;
+    max-height: 150px;
+    min-height: 100vh;
+    max-height: 60vh;
+    margin: 14px;
+    padding: 0px;
+
+    width: 65vw;
+  }
+  .text-project-tag {
+    padding-right: 20px;
+    flex-direction: column;
+    max-height: 150px;
+
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .section-project {
+    padding-right: 20px;
+    flex-direction: row;
+    max-height: 150px;
+    font-size: 12px;
+
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+  }
+  .tags--project {
+    display: flex;
+    justify-content: center;
+    transform: translateX(-18.5vh);
+  }
+  .text-project-tag {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .section-profile-header {
+    font-size: 2.9vh;
+    font-weight: bold;
+    text-align: center;
+  }
+  .text-card h2 {
+    font-size: 4vh;
+    text-align: center;
+  }
+  .section-project {
+    align-items: center;
+    text-align: center;
+    height: 100%;
+  }
+  .description-project {
+    text-align: center;
   }
 }

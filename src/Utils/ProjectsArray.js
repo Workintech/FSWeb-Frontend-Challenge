@@ -35,7 +35,7 @@ const projectsArray = () => {
             <div className="tags--project">
               {list.tags.map((tag) => (
                 <p className="text-project-tag">{tag}</p>
-              ))}{" "}
+              ))}
             </div>
             <div className="links-projects">
               <a href={list.vercel} target="_blank">

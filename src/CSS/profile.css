@@ -63,64 +63,30 @@
   font-family: monospace;
   padding-top: 25px;
 }
+
 /* responsive */
 
 @media only screen and (max-width: 1160px) {
   .section-profile {
-    padding-top: 0vh;
-    height: 180vh;
-    min-height: 100vh;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    flex-wrap: unset;
+    height: 100%;
   }
-  .profile-left {
-    transform: unset;
-    width: 80vw;
-  }
-  .section-profile h1 {
-    transform: unset;
-  }
-  .About-Me h3 {
-    margin-top: 0px;
-  }
-  .About-Me p {
-    width: 100vw;
-    margin-top: 5vh;
-    max-width: unset;
+  #profilePic {
+    border-radius: 15px;
+    height: 120px;
+    filter: drop-shadow(8px 4px 10px gray);
   }
 }
-@media only screen and (max-width: 1160px) {
+@media only screen and (max-width: 640px) {
   .section-profile {
-    padding-top: -1vh;
-    margin-inline-start: 0%;
-    height: 150vh;
-    min-height: 100vh;
     align-items: center;
     text-align: center;
-    flex-direction: column;
-    flex-wrap: unset;
-    transform: translateY(10vh);
+    background-color: #c4b5fd;
   }
-  .profile-left {
-    transform: unset;
-    width: 1180vw;
-    height: 150px;
-    padding-top: -10vh;
-  }
-  .section-profile h1 {
-    transform: unset;
-  }
-  .About-Me h3 {
-    padding-bottom: 10px;
-  }
-  .About-Me p {
-    min-height: min-content;
-    width: 30vw;
-    margin-top: 1vh;
-    padding-bottom: -20vh;
-    padding-block: 2px;
-    padding-top: -20vh;
+  #profilePic {
+    border-radius: 15px;
+    height: 120px;
+    filter: drop-shadow(8px 4px 10px gray);
   }
 }

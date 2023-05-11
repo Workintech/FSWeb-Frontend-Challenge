@@ -1,10 +1,10 @@
 import React from "react";
 import "../CSS/profile.css";
-import profilePic from "../assets/image 2.png";
+import profilePic from "../assets/k.JPEG";
 
 const Profile = () => {
   return (
-    <section class="section-profile">
+    <section className="section-profile">
       <div className="profile-left">
         <h1>Profile</h1>
         <h2>Basic Information</h2>
