@@ -2,7 +2,7 @@
   background-color: white;
   text-align: center;
   height: 15rem;
-  width: 45vw;
+  width: 55vw;
   margin: 10px;
   border-radius: 35px;
   margin-top: 15px;
@@ -11,11 +11,10 @@
 }
 
 .section-footer {
-  height: 100vh;
   display: flex;
   align-items: center;
   flex-direction: column;
-  width: 100vw;
+
   justify-content: unsafe center;
   background-color: #c4b5fd;
 }
@@ -39,17 +38,12 @@
   font-size: 20px;
 }
 .icons {
-  display: flex;
-  flex-direction: row;
   font-size: 28px;
-
-  padding: 13px;
-  gap: 24px;
-
   color: #c4b5fd;
-  text-align: center;
-
-  margin-top: -1.5%;
+  padding: 11px;
+}
+.icons a {
+  margin: 6px;
 }
 #sendMeMsc {
   margin-top: 10px;

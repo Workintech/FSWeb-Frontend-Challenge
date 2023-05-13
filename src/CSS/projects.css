@@ -111,7 +111,7 @@
     min-height: 230vh;
   }
   .section-profile-header {
-    align-items: center;
+    text-align: left;
   }
   .project-card-container {
     text-align: left;
@@ -136,6 +136,10 @@
     padding: 0px;
     align-items: center;
     justify-content: center;
+  }
+  .text-card {
+    padding-left: 0px;
+    padding: 1px;
   }
   .section-project {
     padding-right: 20px;

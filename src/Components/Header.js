@@ -6,11 +6,11 @@ import Button from "../Utils/Button";
 const Header = () => {
   return (
     <section className="min-h-screen bg-violet-300 p-20 m-0 rounded items-center flex flex-3 lg:flex-row flex-col-reverse">
-      <div className=" flex flex-2 flex-col">
-        <header className="underline font-mono text-center lg:text-left text-[#cbf281] text-[22px] font-bold m-14">
+      <div className=" flex flex-2 flex-col justify-start">
+        <header className="underline font-mono text-center lg:text-left text-[#cbf281] text-[22px] font-bold py-14">
           Bahar Gümüşer
         </header>
-        <div className="m-14 ">
+        <div>
           <h1 className="font-mono text-center lg:text-left text-5xl text-[#cbf281] font-bold pb-10">
             I'm a Full Stack Developer...
           </h1>
@@ -22,7 +22,7 @@ const Header = () => {
           <Button />
         </div>
       </div>
-      <div className="flex-1 flex">
+      <div className="flex-1 flex justify-center">
         <img
           src={headerPic}
           className="max-w-[12rem] aspect-auto drop-shadow-xl rounded-[2rem]"
