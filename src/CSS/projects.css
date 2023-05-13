@@ -159,6 +159,13 @@
   .text-project-tag {
     display: flex;
     justify-content: center;
+    align-items: center;
+    margin-right: 0px;
+    margin: 4px;
+  }
+  .links-projects a {
+    margin-right: 0px;
+    margin: 15px;
   }
 }
 @media only screen and (max-width: 640px) {
@@ -166,6 +173,7 @@
     font-size: 2.9vh;
     font-weight: bold;
     text-align: center;
+    transform: translateX(0px);
   }
   .text-card h2 {
     font-size: 4vh;
@@ -178,5 +186,16 @@
   }
   .description-project {
     text-align: center;
+  }
+  .text-project-tag {
+    display: flex;
+    justify-content: center;
+    margin-right: 0px;
+    margin: 4px;
+    align-items: center;
+  }
+  .links-projects a {
+    margin-right: 0px;
+    margin: 15px;
   }
 }
