@@ -47,7 +47,7 @@ Not\* Bu dökümanın en sonunda da, sunumda seni değerlendireceğimiz başlık
   - Mobil ve tablet gibi farklı cihaz boyutları için,
     tasarımda biraz değişiklik insiyatif kullanmak zorunda kalabilirsin
 - Axios ile API request simple etmelisin.
-  - [https://reqres.in/api/users](https://reqres.in) veya benzeri
+  - [https://reqres.in/api/workintech](https://reqres.in/workintech) veya benzeri
     ücretsiz bir mock api servisine, `axios` ile POST ile kendi datanızı atıp, gelen mock datayı arayüze basabilirsin.
 
 > Böylece backende geçince de yönetim paneli yazıp, hem kod kalitesi hem yapabildiğiniz her şeyi tek projede birleştirmiş olacaksınız.
@@ -72,7 +72,7 @@ Projenizi vercel'de yayınlayın.
 > Öncesinde geliştirdiğiniz bütün projelerin de vercel'deki linklerini
 > eklediğinize dikkat edin.
 
-### Görev 4: Esnek Görevler
+### Görev 4: İleri Düzey (ADV) Görevler
 
 Frontend'de ne kadar yetenekli olduğunu, hünerlerini göstermek için ekstra yapabileceklerin.
 
