@@ -106,6 +106,7 @@
   margin-right: 30px;
 }
 /* Responsive */
+
 @media only screen and (max-width: 1160px) {
   .section-project {
     min-height: 230vh;
@@ -127,6 +128,7 @@
     padding: 0px;
 
     width: 65vw;
+    width: min-content;
   }
   .text-project-tag {
     padding-right: 20px;
@@ -197,5 +199,20 @@
   .links-projects a {
     margin-right: 0px;
     margin: 15px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .description-project {
+    font-size: 13px;
+  }
+  .tags--project {
+    /*     width: min-content; */
+    padding-bottom: 0px;
+  }
+  .project-card-container {
+    padding-bottom: 0px;
+  }
+  .section-profile-header {
+    padding-top: 0px;
   }
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/profile.css";
-import profilePic from "../assets/k.JPEG";
+/* import profilePic from "../assets/k.JPEG"; */
 
 const Profile = () => {
   return (
@@ -24,7 +24,7 @@ const Profile = () => {
           <span>Preferred Job: </span> Junior Developer
         </p>
       </div>
-      <img src={profilePic} alt="profile" id="profilePic" />
+      {/*       <img src={profilePic} alt="profile" id="profilePic" /> */}
 
       <div className="About-Me">
         <h3 /* className="tc-[#cbf281]" */>About Me</h3>
