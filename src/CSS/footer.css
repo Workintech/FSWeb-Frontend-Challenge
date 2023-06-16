@@ -66,4 +66,10 @@
     flex-direction: row-reverse;
     justify-content: center;
   }
+  .kare p {
+    font-size: 12px;
+  }
+  #sendMeMsc {
+    margin-top: 20px;
+  }
 }
