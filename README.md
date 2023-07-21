@@ -116,7 +116,7 @@ Frontend'de ne kadar yetenekli olduğunu, hünerlerini göstermek için ekstra y
 | Renk modu değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu?   | ADV    |
 | Dil Değiştirme                                                                                                 | ADV    |
 | Dil değişimi kodlara eklenmiş mi?                                                                              | ADV    |
-| Kullanıcının tarayısının sistem dili önden okunuyor mu?                                                   | ADV    |
+| Kullanıcının bilgisayarındaki sistem dili önden okunuyor mu?                                                   | ADV    |
 | Dil tercihi değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu? | ADV    |
 |                                                                                                                |          |
 | Vercel                                                                                                         |          |
