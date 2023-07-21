@@ -92,32 +92,32 @@ Frontend'de ne kadar yetenekli olduğunu, hünerlerini göstermek için ekstra y
 | CSS flex becerisi ortalama ve hizalamalar doğru mu?                                                            |          |
 | HTML yapısı anlamlı mı? Semantik tagler kullanılmış mı?                                                        |          |
 | Figmadaki tasarıma benzerlik (1-5)                                                                             |          |
-| Responsive davranış                                                                                            | Bonus    |
-| Responsive uyarlama kabiliyeti (1-5)                                                                           | Bonus    |
-| Gece Modu eklenmiş mi? Form vs                                                                                 | Bonus    |
-| Gece Modu'nun ana tasarımla uyumu (1-5)                                                                        | Bonus    |
+| Responsive davranış                                                                                            | ADV    |
+| Responsive uyarlama kabiliyeti (1-5)                                                                           | ADV    |
+| Gece Modu eklenmiş mi? Form vs                                                                                 | ADV    |
+| Gece Modu'nun ana tasarımla uyumu (1-5)                                                                        | ADV    |
 |                                                                                                                |          |
 | React JS                                                                                                       |          |
 | İçerik componentlere bölünmüş mü?                                                                              |          |
 | Prop/export/import gibi React JS özellikleri kullanılmış mı?                                                   |          |
-| Temel paketler dışında ek bir paket kullanılmış mı? Toastify/Tailwind                                          | Bonus    |
+| Temel paketler dışında ek bir paket kullanılmış mı? Toastify/Tailwind                                          | ADV    |
 | Kodda Türkçe karakter olmamasına dikkat edilmiş mi?                                                            |          |
 | Genel React JS anlayışı (1-5)                                                                                  |          |
 |                                                                                                                |          |
 | Veri Yönetimi                                                                                                  |          |
 | Veriler state'te tutuluyor mu?                                                                                 |          |
-| Verileri bir js dosyasından, dinamik eklemiş mi?                                                               | Bonus    |
+| Verileri bir js dosyasından, dinamik eklemiş mi?                                                               | ADV    |
 | Tekrar eden bileşenler için map kullanmış mı?                                                                  |          |
-| Kullandığı verileri, axios ve mock bir API'ye atıp, response'u kullanıyor mu?                                  | Bonus    |
+| Kullandığı verileri, axios ve mock bir API'ye atıp, response'u kullanıyor mu?                                  | ADV    |
 |                                                                                                                |          |
-| Gece Modu                                                                                                      | Bonus    |
-| Gece Modu tasarımı eklenmiş mi?                                                                                | Bonus    |
-| Kullanıcının bilgisayarındaki sistem renk modu tercihi önden okunuyor mu?                                      | Bonus    |
-| Renk modu değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu?   | Bonus    |
-| Dil Değiştirme                                                                                                 | Bonus    |
-| Dil değişimi kodlara eklenmiş mi?                                                                              | Bonus    |
-| Kullanıcının bilgisayarındaki sistem dili önden okunuyor mu?                                                   | Bonus    |
-| Dil tercihi değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu? | Bonus    |
+| Gece Modu                                                                                                      | ADV    |
+| Gece Modu tasarımı eklenmiş mi?                                                                                | ADV    |
+| Kullanıcının bilgisayarındaki sistem renk modu tercihi önden okunuyor mu?                                      | ADV    |
+| Renk modu değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu?   | ADV    |
+| Dil Değiştirme                                                                                                 | ADV    |
+| Dil değişimi kodlara eklenmiş mi?                                                                              | ADV    |
+| Kullanıcının tarayısının sistem dili önden okunuyor mu?                                                   | ADV    |
+| Dil tercihi değiştikçe, tarayıcı ön belleğine (localstorage) kaydediliyor ve sayfa yenilendiğinde okunuyor mu? | ADV    |
 |                                                                                                                |          |
 | Vercel                                                                                                         |          |
 | Bu proje sunumdan önce vercele yüklenmiş mi?                                                                   |          |
