@@ -56,13 +56,24 @@ text-align: left;
 color: rgba(107, 114, 128, 1);
 }
 .hire-button{
-    width: 131px;
-    height: 52px;
-    border-radius: 6px;
-    border: 1px solid #3730A3;
-    text-align: center;
-    align-content: center;
-    background-color: white;
+width: 131px;
+height: 52px;
+border-radius: 6px;
+border: 1px solid #3730A3;
+text-align: center;
+align-content: center;
+background-color: white;
+ color: #3730A3;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+display: flex;
+justify-content: space-around;
+align-items: center;
+
+
     
 }
 .hire-button button {

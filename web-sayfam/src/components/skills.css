@@ -1,0 +1,38 @@
+.skills-container{
+ width: 1140px;
+height: 179px;
+margin-top:130px;
+margin-left: 125px;
+}
+.skill-title{
+font-family: 'Inter', sans-serif;
+color: rgba(31, 41, 55, 1);
+font-size: 48px;
+font-weight: 600;
+line-height: 48px;
+text-align: left;
+}
+.skill-explanation-area{
+display: flex;
+flex-direction: row;
+width: Hug (1,140px);
+height: Hug (104px);
+gap: 120px;
+}
+.skill-explanation-area h3{
+font-family: 'Inter', sans-serif;
+font-size: 30px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(67, 56, 202, 1);
+}
+.skill-explanation-area p{
+font-family: 'Inter', sans-serif;
+font-size: 12px;
+font-weight: 400;
+line-height: 16px;
+text-align: left;
+color: rgba(107, 114, 128, 1);
+    }

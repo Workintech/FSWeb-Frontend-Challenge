@@ -22,7 +22,7 @@ function Hero(props) {
             {" "}
             <FontAwesomeIcon
               icon={faGithub}
-              size="2xl"
+              size="xl"
               style={{ color: "#3730A3" }}
             />
             Github
@@ -30,7 +30,7 @@ function Hero(props) {
           <button className="hire-button">
             <FontAwesomeIcon
               icon={faLinkedinIn}
-              size="2xl"
+              size="xl"
               style={{ color: "#3730A3" }}
             />
             Linkedin

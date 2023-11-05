@@ -2,6 +2,7 @@ import ModeSwitch from "./components/ModeSwitch";
 import Header from "./components/Header";
 import { useState } from "react";
 import Hero from "./components/Hero";
+import Skills from "./components/Skills";
 const initialDAta = {
   name: "Almila Su",
   birthday: "24.03.1996",
@@ -28,6 +29,7 @@ function App() {
       <ModeSwitch />
       <Header />
       <Hero profildata={profildata} />
+      <Skills />
     </>
   );
 }
