@@ -5,7 +5,7 @@ function ModeSwitch() {
         <div className="darkmode">
           <div className="toggle-button"></div>
         </div>
-        <div className="darkmode-title">DarkMode</div>
+        <div className="darkmode-title">DARK MODE</div>
       </div>
       <div className="or-symbol">|</div>
       <div className="language-container">

@@ -1,0 +1,58 @@
+.hero-container{
+width: 1140px;
+height: 428px;
+margin-top: 125px;
+margin-left: 125px;
+display: flex;
+flex-direction: row;
+}
+.hero-name-area{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.straight-line{
+    width: 100px;
+    height: 2px; 
+    background-color: rgba(55, 48, 163, 1); 
+    
+}
+.hero-name{
+  
+font-family: 'Inter', sans-serif;
+font-size: 20px;
+font-weight: 500;
+text-align: center;
+color: rgba(55, 48, 163, 1); 
+
+}
+.hero-topic{
+width: 596px;
+height: 144px;
+color: rgba(31, 41, 55, 1);
+font-family: 'Inter', sans-serif;
+font-size: 72px;
+font-weight: 700;
+line-height: 72px;
+text-align: left;
+}
+.hero-explanation{
+    color:rgba(107, 114, 128, 1);
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+#flex-buttons{
+display: flex;
+flex-direction: row;
+width: Hug (421px);
+height: Hug (52px);
+margin-top: 43px;
+left: 125px;
+gap: 12px;
+}

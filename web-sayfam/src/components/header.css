@@ -59,9 +59,10 @@ color: rgba(107, 114, 128, 1);
     width: 131px;
     height: 52px;
     border-radius: 6px;
-    border: 2px solid #3730A3;
+    border: 1px solid #3730A3;
     text-align: center;
     align-content: center;
+    background-color: white;
     
 }
 .hire-button button {
@@ -75,5 +76,4 @@ font-weight: 500;
 line-height: 28px;
 letter-spacing: 0em;
 border: 0; 
-
 }
