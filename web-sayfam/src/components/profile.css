@@ -1,0 +1,113 @@
+.profile-container{
+width: 1140px;
+height: 355px;
+margin-top: 90px;
+margin-left: 125px;
+border: 1px;
+}
+.vector-two{
+    width: 1140px;
+    height: 1px; 
+    background-color: rgba(186, 178, 231, 1)
+}
+
+.profile-title{
+width: 150px;
+height: 48px;
+top: 1049px;
+left: 125px;
+font-family: 'Inter', sans-serif;
+font-size: 48px;
+font-weight: 600;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.profile-explanation-area-flex{
+display: flex;
+flex-direction: row;
+}
+.profile-explanation-area{
+    width: 412.08px;
+    height: 229px;
+    top: 1136px;
+    left: 125px;
+   
+    
+}
+.profile-second-title{
+width: 137.09px;
+height: 28px;
+top: 1136px;
+left: 125px;
+font-family: 'Inter', sans-serif;
+font-size: 30px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color:rgba(67, 56, 202, 1);
+
+}
+.profile-third-title{
+width: 576.9px;
+height: 24.42px;
+top: 1136px;
+left: 593.43px;
+font-family: 'Inter', sans-serif;
+font-size: 30px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: left;
+color:rgba(67, 56, 202, 1); 
+}
+
+.profile-about-area{
+width: 576.9px;
+height: 182px;
+top: 1136px;
+left: 593.43px;
+}
+.profile-about-area p{
+    width: 558.41px;
+    height: 143px;
+    top: 1175px;
+    left: 593.43px;
+    font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+color:rgba(107, 114, 128, 1);  
+}
+
+.profile-explanation-title{
+width: 155.65px;
+height: 180px;
+top: 1185px;
+left: 125px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 600;
+line-height:25px;
+letter-spacing: 0.01em;
+text-align: left;
+}
+.profile-explanation{
+width: 231.8px;
+height: 180px;
+top: 1185px;
+left: 305.29px;
+font-family: 'Inter', sans-serif;
+font-size: 18px;
+font-weight: 400;
+line-height: 31px;
+text-align: left;
+}
+.profile-explanation-flex{
+    display: flex;
+    flex-direction: row;
+}

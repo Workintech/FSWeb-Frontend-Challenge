@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import { useState } from "react";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
+import Profile from "./components/Profile";
 const initialDAta = {
   name: "Almila Su",
   birthday: "24.03.1996",
@@ -16,7 +17,7 @@ function App() {
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800&display=swap"
         rel="stylesheet"
@@ -30,6 +31,7 @@ function App() {
       <Header />
       <Hero profildata={profildata} />
       <Skills />
+      <Profile profildata={profildata} />
     </>
   );
 }

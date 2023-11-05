@@ -7,6 +7,7 @@ import "./components/modeswitch.css";
 import "./components/header.css";
 import "./components/hero.css";
 import "./components/skills.css";
+import "./components/profile.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
