@@ -8,6 +8,7 @@ import "./components/header.css";
 import "./components/hero.css";
 import "./components/skills.css";
 import "./components/profile.css";
+import "./components/project.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>

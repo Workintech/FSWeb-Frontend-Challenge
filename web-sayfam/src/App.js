@@ -4,6 +4,7 @@ import { useState } from "react";
 import Hero from "./components/Hero";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 const initialDAta = {
   name: "Almila Su",
   birthday: "24.03.1996",
@@ -26,12 +27,14 @@ function App() {
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
       />
-
-      <ModeSwitch />
-      <Header />
-      <Hero profildata={profildata} />
-      <Skills />
-      <Profile profildata={profildata} />
+      <div>
+        <ModeSwitch />
+        <Header />
+        <Hero profildata={profildata} />
+        <Skills />
+        <Profile profildata={profildata} />
+        <Projects />
+      </div>
     </>
   );
 }

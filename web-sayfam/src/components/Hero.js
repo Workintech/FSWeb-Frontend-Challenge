@@ -38,7 +38,7 @@ function Hero(props) {
         </div>
       </div>
       <div>
-        <img src={laptoplukız} alt="Açıklama Metni" />
+        <img src={laptoplukız} alt="hero component resim" />
       </div>
     </div>
   );
