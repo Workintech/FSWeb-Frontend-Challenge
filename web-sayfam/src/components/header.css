@@ -10,8 +10,14 @@ justify-content: space-between;
 .header-symbol{
 width: 63.68px;
 height: 62px;
-background-color: rgba(238, 235, 255, 1);
+background-color:rgba(238, 235, 255, 1);
 border-radius: 30px;
+}
+.header-symbol-dark{
+    width: 63.68px;
+    height: 62px;
+    background-color:rgba(71, 49, 211, 1);
+    border-radius: 30px; 
 }
 .header-symbol-text{
  width: 18.37px;
@@ -24,9 +30,18 @@ line-height: 32px;
 color: rgba(123, 97, 255, 1);
 margin-left: 23px;
 margin-top: 15px;
-
-
-
+}
+.header-symbol-text-dark{
+    width: 18.37px;
+    height: 32.22px;
+    rotate: 29.34deg;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    color: rgba(143, 136, 255, 1);
+    margin-left: 23px;
+    margin-top: 15px;
 }
 .header-links{
 display: flex;

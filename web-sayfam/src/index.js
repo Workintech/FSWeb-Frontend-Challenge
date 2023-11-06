@@ -9,11 +9,15 @@ import "./components/hero.css";
 import "./components/skills.css";
 import "./components/profile.css";
 import "./components/project.css";
+import "./components/footer.css";
+import { SiteContextProvider } from "./contexts/SiteContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+  <SiteContextProvider>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </SiteContextProvider>
 );
 
 // If you want to start measuring performance in your app, pass a function

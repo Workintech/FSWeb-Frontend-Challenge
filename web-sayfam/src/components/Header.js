@@ -1,8 +1,19 @@
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
 function Header() {
+  const { theme, setTheme } = useContext(SiteContext);
   return (
     <header className="header-container">
-      <div className="header-symbol">
-        <div className="header-symbol-text">A</div>{" "}
+      <div
+        className={theme === "LIGHT" ? "header-symbol-dark" : "header-symbol"}
+      >
+        <div
+          className={
+            theme === "LIGHT" ? "header-symbol-text-dark" : "header-symbol-text"
+          }
+        >
+          A
+        </div>{" "}
       </div>
       <div className="header-links">
         <div className="header-skill">Skills</div>

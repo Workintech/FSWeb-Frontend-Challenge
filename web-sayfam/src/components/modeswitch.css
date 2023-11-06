@@ -6,41 +6,65 @@ height: Hug(38px);
 margin-top: 23px;
 gap:14px
 }
-.darkmode-container{
+.lightmode-container{
 display: flex;
 width: Hug (167px);
 height: Hug (24px);
 gap: 10px;
 }
 
+.lightmode{
+width: 55px;
+height: 24px;
+margin-left: 55px;
+border-radius: 100px;
+background-color:rgba(71, 49, 211, 1)
+
+}
 .darkmode{
 width: 55px;
 height: 24px;
 margin-left: 55px;
 border-radius: 100px;
-transform: rotate(-180deg);
-background-color:rgba(71, 49, 211, 1)
-
+background-color:rgba(58, 58, 58, 1)
 }
 .toggle-button{
 width: 18px;
 height: 22px;
-transform: rotate(-180deg);
 background-color:rgba(255, 232, 110, 1) ;
 border-radius: 30px;
-margin-left: 3px; 
-} 
-.darkmode-title{
+margin-left: 32px; 
+}  
+
+
+.toggle-button-dark{
+  width: 18px;
+  height: 22px;
+  margin-left: 6px;
+  background-color:rgba(255, 232, 110, 1) ;
+  border-radius: 150px;
+  }
+
+.lightmode-title{
 font-family: 'Inter', sans-serif;
 font-size: 15px;
 font-weight: 700;
 line-height: 18px;
 letter-spacing: 0.1em;
 text-align: left;
-
 color:rgba(119, 119, 119, 1)
 
 }
+.darkmode-title{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
+  color:rgba(217, 217, 217, 1)
+  
+  }
 .or-symbol{
 font-family: 'Inter', sans-serif;
 font-size: 15px;
@@ -48,6 +72,7 @@ font-weight: 700;
 line-height: 18px;
 letter-spacing: 0.1em;
 text-align: left;
+color:rgba(119, 119, 119, 1)
 
 }
 .language-container{
@@ -60,8 +85,35 @@ text-align: left;
 
 }
 .language-color_one{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
     color: rgba(71, 49, 211, 1);
+    background-color: white;
+    border: none;
+    cursor: pointer;
+}
+.language-color-dark{
+  font-family: 'Inter', sans-serif;
+font-size: 15px;
+font-weight: 700;
+line-height: 18px;
+letter-spacing: 0.1em;
+text-align: left;
+  color: rgba(186, 178, 231, 1);
+  background-color: rgba(37, 33, 40, 1);
+  border: none;
+  cursor: pointer;
 }
 .language-color_two{
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0.1em;
+  text-align: left;
   color:  rgba(119, 119, 119, 1);
 }

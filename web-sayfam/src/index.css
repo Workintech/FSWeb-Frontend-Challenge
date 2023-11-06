@@ -3,4 +3,16 @@ body {
  max-height: 2350px;
 }
 
+.dark-mode{
+    background-color:rgba(37, 33, 40, 1) ;
+}
+.dark-mode h1{
+    color: rgba(174, 188, 207, 1);
+}
 
+.dark-mode h3{
+    color: rgba(183, 170, 255, 1);
+}
+.dark-mode p{
+ color:rgba(255, 255, 255, 1)
+}
