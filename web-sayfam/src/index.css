@@ -28,3 +28,7 @@ padding-bottom: 208px;
 .dark-mode a{
     color: rgba(225, 225, 255, 1) !important;
 }
+.custom-toast-container {
+    
+    font-size: 28px;
+  }

@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const SiteContext = createContext();
 
 export const SiteContextProvider = ({ children }) => {
-  const [lang, setLang] = useState("en");
+  const [lang, setLang] = useState("TÜRKÇE");
   const [theme, setTheme] = useState("DARK");
 
   //   const localizedTexts = {

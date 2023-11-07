@@ -1,7 +1,11 @@
 import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
+import { toast } from "react-toastify";
 function Header() {
   const { theme, setTheme } = useContext(SiteContext);
+  const notify = () =>
+    toast("O zaman hemen mustafabasaaar@gmail.com'a mail atıyorsun");
+
   return (
     <header className="header-container">
       <div
@@ -19,7 +23,10 @@ function Header() {
         <div className="header-skill">Skills</div>
         <div className="header-projects">Projects</div>
         <div className="hire-button">
-          <button className={theme === "LIGHT" ? "hire-button-dark" : ""}>
+          <button
+            onClick={notify}
+            className={theme === "LIGHT" ? "hire-button-dark" : ""}
+          >
             Hire Me
           </button>
         </div>

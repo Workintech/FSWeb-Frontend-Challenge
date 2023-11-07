@@ -103,6 +103,21 @@ line-height: 28px;
 letter-spacing: 0em;
 border: 0; 
 }
+.hire-button button:hover {
+  background-color: rgba(55, 48, 163, 1);
+  color: white;
+  cursor: pointer;
+    }
 .hire-button-dark{
- color:rgba(55, 48, 163, 1) !important;
+ color:rgba(55, 48, 163, 1) ;
 }
+.hire-button-dark:hover{
+    background-color: rgba(225, 225, 255, 1);
+    color: white;
+    cursor: pointer;
+   }
+   .hire-button:hover{
+    background-color: rgba(225, 225, 255, 1);
+    color: white;
+    cursor: pointer;
+   }

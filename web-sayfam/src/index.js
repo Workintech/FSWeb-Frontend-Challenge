@@ -11,6 +11,7 @@ import "./components/profile.css";
 import "./components/project.css";
 import "./components/footer.css";
 import { SiteContextProvider } from "./contexts/SiteContext";
+
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <SiteContextProvider>

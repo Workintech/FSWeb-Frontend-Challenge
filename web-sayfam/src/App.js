@@ -8,6 +8,8 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import { useContext } from "react";
 import { SiteContext } from "./contexts/SiteContext";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 const initialDAta = {
   name: "Almila Su",
   birthday: "24.03.1996",
@@ -40,6 +42,7 @@ function App() {
         <Projects />
       </div>
       <Footer profildata={profildata} />
+      <ToastContainer className="custom-toast-container" />
     </>
   );
 }

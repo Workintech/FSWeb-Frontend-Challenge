@@ -4,8 +4,22 @@ import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import laptoplukız from "../images/laptoplukız.png";
 import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
+import { toast } from "react-toastify";
 function Hero(props) {
   const { theme, setTheme } = useContext(SiteContext);
+
+  const redirectToGitHub = () => {
+    window.open("https://github.com/mustafabasaar?tab=repositories", "_blank");
+  };
+  const redirectToLinkedin = () => {
+    window.open(
+      "https://www.linkedin.com/in/mustafa-ba%C5%9Far-65749b259/",
+      "_blank"
+    );
+  };
+  const notify = () =>
+    toast("O zaman hemen mustafabasaaar@gmail.com'a mail atıyorsun");
+
   return (
     <div className="hero-container">
       <div>
@@ -22,8 +36,10 @@ function Hero(props) {
           user experiences. Let’s shake hands with me.
         </p>
         <div id="flex-buttons">
-          <button className="hire-button">Hire Me</button>
-          <button className="hire-button">
+          <button onClick={notify} className="hire-button">
+            Hire Me
+          </button>
+          <button onClick={redirectToGitHub} className="hire-button">
             {" "}
             <FontAwesomeIcon
               icon={faGithub}
@@ -33,7 +49,7 @@ function Hero(props) {
             />
             Github
           </button>
-          <button className="hire-button">
+          <button onClick={redirectToLinkedin} className="hire-button">
             <FontAwesomeIcon
               icon={faLinkedinIn}
               size="xl"
