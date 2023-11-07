@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 
 function Footer(props) {
-  const { theme, setTheme } = useContext(SiteContext);
+  const { theme, setTheme, store } = useContext(SiteContext);
   return (
     <footer
       className={
@@ -10,12 +10,12 @@ function Footer(props) {
       }
     >
       <h1 className={theme === "LIGHT" ? "dark-footer-title" : "footer-title"}>
-        Let’s work together on your next product.
+        {store.baslik.footer}
       </h1>
       <div className="footer-links-area">
         <p className="footer-mail">👉{props.profildata.mail}</p>
         <div className="footer-links">
-          <p>Personal Blog</p>
+          <p> {store.baslik.footerlink}</p>
           <a
             href="https://github.com/mustafabasaar?tab=repositories"
             target="_blank"

@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 
 function ModeSwitch() {
-  const { theme, setTheme } = useContext(SiteContext);
+  const { theme, setTheme, lang, setLang } = useContext(SiteContext);
   function clickHandler() {
     if (theme === "LIGHT") {
       setTheme("DARK");
@@ -11,6 +11,15 @@ function ModeSwitch() {
       setTheme("LIGHT");
     }
   }
+  function langHandler() {
+    if (lang === "TÜRKÇE") {
+      setLang("ENG");
+    }
+    if (lang === "ENG") {
+      setLang("TÜRKÇE");
+    }
+  }
+
   return (
     <div className="ModeSwitch-container">
       <div className="lightmode-container">
@@ -31,11 +40,12 @@ function ModeSwitch() {
       <div className="or-symbol">|</div>
       <div className="language-container">
         <button
+          onClick={langHandler}
           className={
             theme === "LIGHT" ? "language-color-dark" : "language-color_one"
           }
         >
-          TÜRKÇE
+          {lang}
         </button>
         <span className="language-color_two">'YE GEÇ</span>
       </div>

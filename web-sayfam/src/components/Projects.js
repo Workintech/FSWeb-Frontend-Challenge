@@ -1,11 +1,14 @@
 import workintech from "../images/workintech.png";
 import randomjokes from "../images/randomjokes.png";
 import journey from "../images/journey.png";
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
 function Projects() {
+  const { store } = useContext(SiteContext);
   return (
     <div className="project-container">
       <p className="vector-two"></p>
-      <h1 className="projects-title">PROJECTS</h1>
+      <h1 className="projects-title">{store.baslik.projects}</h1>
       <div className="projects-area">
         <div className="project-area">
           <img src={workintech} alt="projects componensts resim 1" />
@@ -41,7 +44,7 @@ function Projects() {
         </div>
         <div className="project-area">
           <img src={randomjokes} alt="projects componensts resim 1" />
-          <h3 className="project-title">Workintech</h3>
+          <h3 className="project-title">Random Jokes</h3>
           <p className="project-explanation">
             A simple, customizable, minimal setup cookie plugin that allows your
             users to select which cookies to accept or decline. This was created
@@ -73,7 +76,7 @@ function Projects() {
         </div>
         <div className="project-area">
           <img src={journey} alt="projects componensts resim 1" />
-          <h3 className="project-title">Workintech</h3>
+          <h3 className="project-title">Journey</h3>
           <p className="project-explanation">
             A simple, customizable, minimal setup cookie plugin that allows your
             users to select which cookies to accept or decline. This was created

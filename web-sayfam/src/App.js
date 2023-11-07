@@ -21,6 +21,7 @@ const initialDAta = {
 function App() {
   const [profildata, setProfildata] = useState(initialDAta);
   const { theme } = useContext(SiteContext);
+
   return (
     <>
       <link rel="preconnect" href="https://fonts.googleapis.com" />

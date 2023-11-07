@@ -1,17 +1,20 @@
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
 function Profile(props) {
+  const { store } = useContext(SiteContext);
   return (
     <div className="profile-container">
       <p className="vector-two"></p>
-      <h1 className="profile-title">Profile</h1>
+      <h1 className="profile-title">{store.baslik.profile}</h1>
       <div className="profile-explanation-area-flex">
         <div className="profile-explanation-area">
-          <h3 className="profile-second-title">Profile</h3>
+          <h3 className="profile-second-title">{store.baslik.profile}</h3>
           <div className="profile-explanation-flex">
             <div className="profile-explanation-title">
-              <h4>Birthday</h4>
-              <h4>City of Residence</h4>
-              <h4>Education </h4>
-              <h4>Preference role</h4>
+              <h4>{store.baslik.birthday}</h4>
+              <h4>{store.baslik.city}</h4>
+              <h4>{store.baslik.education} </h4>
+              <h4>{store.baslik.role}</h4>
             </div>
             <div className="profile-explanation">
               <p>{props.profildata.birthday}</p>
