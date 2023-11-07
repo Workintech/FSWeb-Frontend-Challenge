@@ -19,7 +19,9 @@ function Header() {
         <div className="header-skill">Skills</div>
         <div className="header-projects">Projects</div>
         <div className="hire-button">
-          <button>Hire Me</button>
+          <button className={theme === "LIGHT" ? "hire-button-dark" : ""}>
+            Hire Me
+          </button>
         </div>
       </div>
     </header>

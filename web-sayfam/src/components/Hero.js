@@ -2,13 +2,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import laptoplukız from "../images/laptoplukız.png";
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
 function Hero(props) {
+  const { theme, setTheme } = useContext(SiteContext);
   return (
     <div className="hero-container">
       <div>
         <div className="hero-name-area">
           <p className="straight-line"></p>
-          <p className="hero-name">{props.profildata.name}</p>
+          <span className={theme === "LIGHT" ? "hero-name-dark" : "hero-name"}>
+            {props.profildata.name}
+          </span>
         </div>
         <h1 className="hero-topic">Creative thinker Minimalism lover</h1>
         <p className="hero-explanation">
@@ -23,6 +28,7 @@ function Hero(props) {
             <FontAwesomeIcon
               icon={faGithub}
               size="xl"
+              className={theme === "LIGHT" ? "icon-dark" : ""}
               style={{ color: "#3730A3" }}
             />
             Github
@@ -31,6 +37,7 @@ function Hero(props) {
             <FontAwesomeIcon
               icon={faLinkedinIn}
               size="xl"
+              className={theme === "LIGHT" ? "icon-dark" : ""}
               style={{ color: "#3730A3" }}
             />
             Linkedin

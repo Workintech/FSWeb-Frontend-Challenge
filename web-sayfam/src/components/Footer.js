@@ -1,7 +1,15 @@
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
+
 function Footer(props) {
+  const { theme, setTheme } = useContext(SiteContext);
   return (
-    <footer className="footer-container">
-      <h1 className="footer-title">
+    <footer
+      className={
+        theme === "LIGHT" ? "dark-footer-container" : "footer-container"
+      }
+    >
+      <h1 className={theme === "LIGHT" ? "dark-footer-title" : "footer-title"}>
         Let’s work together on your next product.
       </h1>
       <div className="footer-links-area">

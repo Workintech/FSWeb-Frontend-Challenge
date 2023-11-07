@@ -1,9 +1,8 @@
 .ModeSwitch-container{
 display:flex;
-margin-left:907px;
+margin-left:867px;
 width: Hug(359px);
 height: Hug(38px);
-margin-top: 23px;
 gap:14px
 }
 .lightmode-container{
@@ -31,9 +30,10 @@ background-color:rgba(58, 58, 58, 1)
 .toggle-button{
 width: 18px;
 height: 22px;
-background-color:rgba(255, 232, 110, 1) ;
-border-radius: 30px;
+background-color:rgb(62, 48, 93) ;
+border-radius: 100px;
 margin-left: 32px; 
+
 }  
 
 
@@ -41,7 +41,7 @@ margin-left: 32px;
   width: 18px;
   height: 22px;
   margin-left: 6px;
-  background-color:rgba(255, 232, 110, 1) ;
+  background-color:rgba(255, 232, 110, 1) !important ;
   border-radius: 150px;
   }
 

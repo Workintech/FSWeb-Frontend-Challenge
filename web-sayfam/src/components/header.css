@@ -103,3 +103,6 @@ line-height: 28px;
 letter-spacing: 0em;
 border: 0; 
 }
+.hire-button-dark{
+ color:rgba(55, 48, 163, 1) !important;
+}

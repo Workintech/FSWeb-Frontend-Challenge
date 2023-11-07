@@ -38,8 +38,8 @@ function App() {
         <Skills />
         <Profile profildata={profildata} />
         <Projects />
-        <Footer profildata={profildata} />
       </div>
+      <Footer profildata={profildata} />
     </>
   );
 }
