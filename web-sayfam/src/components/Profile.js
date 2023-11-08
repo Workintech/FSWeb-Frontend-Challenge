@@ -25,7 +25,7 @@ function Profile(props) {
           </div>
         </div>
         <div className="profile-about-area">
-          <h3 className="profile-third-title">About Me</h3>
+          <h3 className="profile-third-title">{store.baslik.aboutme}</h3>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
             aut, odit laborum aliquam voluptatum nisi mollitia.

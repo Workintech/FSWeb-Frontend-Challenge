@@ -3,7 +3,8 @@ display:flex;
 margin-left:867px;
 width: Hug(359px);
 height: Hug(38px);
-gap:14px
+gap:14px;
+padding-top: 30px;
 }
 .lightmode-container{
 display: flex;

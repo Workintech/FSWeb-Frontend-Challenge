@@ -46,9 +46,10 @@ margin-top: 15px;
 .header-links{
 display: flex;
 flex-direction: row;
-justify-content: space-around;
+justify-content:space-between;
 width: 391.86px;
 align-items: center;
+
 }
 .header-skill{
  width: 46.22px;

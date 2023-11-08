@@ -20,6 +20,30 @@ const initialDataeng = {
     footer: "Let’s work together on your next product.",
     footerlink: "Personal Blog",
   },
+  projects: [
+    {
+      id: 1,
+      head: "Workintech",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+      img: "workintech",
+    },
+    {
+      id: 2,
+      head: "RandomJokes",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+      img: "randomjokes",
+    },
+    {
+      id: 3,
+      head: "Journey",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+
+      img: "journey",
+    },
+  ],
 };
 const initialDatatr = {
   baslik: {
@@ -38,6 +62,29 @@ const initialDatatr = {
     footer: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
     footerlink: "Kişisel Sayfam",
   },
+  projects: [
+    {
+      id: 1,
+      name: "Workintech",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+      img: "workintech",
+    },
+    {
+      id: 2,
+      name: "RandomJokes",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+      img: "{randomjokes}",
+    },
+    {
+      id: 3,
+      name: "Journey",
+      projectsexp:
+        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
+      img: "journey",
+    },
+  ],
 };
 
 export const SiteContextProvider = ({ children }) => {
