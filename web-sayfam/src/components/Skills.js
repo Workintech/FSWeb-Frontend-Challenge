@@ -1,7 +1,10 @@
+import { useContext } from "react";
+import { SiteContext } from "../contexts/SiteContext";
 function Skills() {
+  const { store } = useContext(SiteContext);
   return (
     <div className="skills-container">
-      <h1 className="skill-title">Skills</h1>
+      <h1 className="skill-title">{store.baslik.skills}</h1>
       <div className="skill-explanation-area">
         <div>
           <h3>Java Script</h3>

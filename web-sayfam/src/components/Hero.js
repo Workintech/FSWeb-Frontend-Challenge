@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import laptoplukız from "../images/laptoplukız.png";
+import laptoplukız from "./laptoplukız.png";
 import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 import { toast } from "react-toastify";

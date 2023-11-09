@@ -1,16 +1,13 @@
-import workintech from "../images/workintech.png";
-import randomjokes from "../images/randomjokes.png";
-import journey from "../images/journey.png";
 import { useContext } from "react";
 import { SiteContext } from "../contexts/SiteContext";
 function Projects() {
-  const { store } = useContext(SiteContext);
+  const { store, projects } = useContext(SiteContext);
   return (
     <div className="project-container">
       <p className="vector-two"></p>
       <h1 className="projects-title">{store.baslik.projects}</h1>
       <div className="projects-area">
-        {store.projects.map((project) => (
+        {projects.map((project) => (
           <div key={project.id} className="project-area">
             <img src={project.img} alt="projects componensts resim 1" />
             <h3 className="project-title">{project.name}</h3>

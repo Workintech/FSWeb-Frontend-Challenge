@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import axios from "axios";
 
 export const SiteContext = createContext();
 
@@ -20,30 +21,6 @@ const initialDataeng = {
     footer: "Let’s work together on your next product.",
     footerlink: "Personal Blog",
   },
-  projects: [
-    {
-      id: 1,
-      head: "Workintech",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-      img: "workintech",
-    },
-    {
-      id: 2,
-      head: "RandomJokes",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-      img: "randomjokes",
-    },
-    {
-      id: 3,
-      head: "Journey",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-
-      img: "journey",
-    },
-  ],
 };
 const initialDatatr = {
   baslik: {
@@ -62,35 +39,28 @@ const initialDatatr = {
     footer: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
     footerlink: "Kişisel Sayfam",
   },
-  projects: [
-    {
-      id: 1,
-      name: "Workintech",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-      img: "workintech",
-    },
-    {
-      id: 2,
-      name: "RandomJokes",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-      img: "{randomjokes}",
-    },
-    {
-      id: 3,
-      name: "Journey",
-      projectsexp:
-        "A simple, customizable, minimal setup cookie plugin that allows your users to select which cookies to accept or decline. This was created  with vanilla JS, SCSS and Parcel Bundler and is available as a NPM package and the git repository makes any type of customization to   code and themes possible.",
-      img: "journey",
-    },
-  ],
 };
 
 export const SiteContextProvider = ({ children }) => {
   const [lang, setLang] = useState("TÜRKÇE");
   const [theme, setTheme] = useState("DARK");
   const [store, setStore] = useState(initialDataeng);
+  const [projects, setProjects] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`https://654b8b475b38a59f28ef48e5.mockapi.io/Projects/`)
+      .then((response) => {
+        console.log("dataver", response);
+        setProjects(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+      .finally(() => {
+        console.log("istek sonlandırıldı");
+      });
+  }, []);
+
   useEffect(() => {
     if (lang === "ENG") {
       setStore(initialDatatr);
@@ -99,9 +69,10 @@ export const SiteContextProvider = ({ children }) => {
       setStore(initialDataeng);
     }
   }, [lang]);
+
   return (
     <SiteContext.Provider
-      value={{ lang, theme, setLang, setTheme, store, setStore }}
+      value={{ lang, theme, setLang, setTheme, store, setStore, projects }}
     >
       {children}
     </SiteContext.Provider>
