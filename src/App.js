@@ -10,9 +10,9 @@ function App() {
     <>
       <Header />
       <Skills />
-      <Profile />
       <Projects />
-      <Footer />
+      <Profile />
+      <Footer /> 
     </>
   );
 }
