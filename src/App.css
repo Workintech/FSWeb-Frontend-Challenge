@@ -4,7 +4,22 @@
   padding: 0px;
   /* Sayfayı ikiye bölebildim */
   box-sizing: border-box;
+  
 }
 body {
   overflow-x: hidden;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin: 0;
+}
+@media only screen and (max-width: 660px)  {
+.section-skills, .section-project, .section-profile, .section-footer {
+  overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ margin: 0;
+}
+
 }
