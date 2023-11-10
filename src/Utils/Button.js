@@ -2,12 +2,12 @@ import React from "react";
 
 const Button = () => {
   return (
-    <div className="flex  justify-center lg:justify-center space-x-4 ">
+    <div className="flex  justify-center lg:justify-center space-x-4 mt-0 lg:mt-6 ">
       <button>
         <a
           href="https://www.linkedin.com/in/bahar-gumuser-83b0801b2/"
           target="_blank"
-          className="px-5 py-3 rounded-xl drop-shadow-2xl border-solid  border-slate-800 hover:bg-[#cbf281] bg-white"
+          className="px-5 py-3 rounded-xl  border-solid  hover:bg-[#a5b4fc] bg-[#ffffff]"
         >
           <i class="fa-brands fa-linkedin-in"></i>
         </a>
@@ -16,7 +16,7 @@ const Button = () => {
         <a
           href="https://github.com/bahargumuser"
           target="_blank"
-          className="px-5 py-3 rounded-xl drop-shadow-2xl border-solid  border-slate-800 hover:bg-[#cbf281] bg-white"
+          className="px-5 py-3 rounded-xl  border-solid  hover:bg-[#a5b4fc] bg-[#ffffff]"
         >
           <i class="fa-brands fa-github"></i>
         </a>
