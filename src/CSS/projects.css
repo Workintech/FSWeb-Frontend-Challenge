@@ -1,44 +1,52 @@
 .section-project {
   min-height: 150vh;
   width: 100vw;
-  background-color: #cbf281;
-  display: flex;
+  background-color: #ffffff;
+  display: grid;
   align-items: center;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding-top: 4vh;
-  padding-bottom: 10vh;
+  padding-top: 25vh;
+
 }
 
 .section-profile-header {
-  color: #c4b5fd;
+  color: #a5b4fc;
   font-family: monospace;
-  font-size: 58px;
+  font-size: 2.25rem;
   letter-spacing: 2px;
   width: 70vw;
   line-height: 72px;
   margin-top: 10px;
   margin-bottom: 10px;
   transform: translateX(5vh);
+  text-align: center;
+  font-weight: bold;
+
 }
 .project-card-container {
   height: 360px;
-
-  width: 65vw;
+  width: 73vw;
   margin: 10px;
   background-color: white;
   display: flex;
   border-radius: 25px;
   margin-top: 15px;
   justify-content: space-between;
-  filter: drop-shadow(8px 4px 10px gray);
+  filter: drop-shadow(3px 2px 2px gray);
   text-align: center;
   padding-right: 20px;
+
+
+  
 }
 .projectImg {
   /* scale: 0.9; */
   border-radius: 4%;
   /* filter: drop-shadow(8px 8px 10px gray); */
+  width: 200vh; /* Genişliği 200 piksel yapar */
+  height: auto;
+ 
 }
 
 .text-card {
@@ -51,12 +59,13 @@
   text-align-last: center;
 }
 .text-card h2 {
-  color: #c4b5fd;
+  color: #a5b4fc;
   font-family: monospace;
   font-size: 38px;
-  font-weight: 900;
+  font-weight: 600;
   margin-top: 6%;
   text-align: center;
+  font-weight: bold;
 }
 .description-project {
   font-size: 16px;
@@ -84,7 +93,7 @@
   width: 90px;
   height: 30px;
   color: white;
-  background-color: #c4b5fd;
+  background-color: #a5b4fc;
   border-radius: 23px;
   margin-right: 12px;
   align-items: center;
@@ -109,16 +118,18 @@
 
 @media only screen and (max-width: 1160px) {
   .section-project {
-    min-height: 230vh;
+    min-height: 490vh;
+    padding-top: 0vh;
   }
   .section-profile-header {
     text-align: left;
+    padding-top: 0;
+    
   }
   .project-card-container {
     text-align: left;
     justify-content: space-between;
     filter: drop-shadow(8px 4px 10px gray);
-
     padding-right: 20px;
     flex-direction: column;
     max-height: 150px;
@@ -126,7 +137,6 @@
     max-height: 60vh;
     margin: 14px;
     padding: 0px;
-
     width: 65vw;
     width: min-content;
   }
@@ -175,7 +185,12 @@
     font-size: 2.9vh;
     font-weight: bold;
     text-align: center;
-    transform: translateX(0px);
+    margin-bottom: -20vw;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom:-80vw;
+   
   }
   .text-card h2 {
     font-size: 4vh;
@@ -185,6 +200,9 @@
     align-items: center;
     text-align: center;
     height: 100%;
+    padding-top: 0vh;
+    margin-bottom: 0;
+
   }
   .description-project {
     text-align: center;
@@ -213,6 +231,7 @@
     padding-bottom: 0px;
   }
   .section-profile-header {
-    padding-top: 0px;
+padding-top: -80vw;
+    align-items: center;
   }
 }
