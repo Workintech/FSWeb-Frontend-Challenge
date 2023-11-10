@@ -11,44 +11,46 @@ const Skills = () => {
   return (
     <section
       className="section-skills"
-      class="min-h-[80vh] md:min-h-screen items-center bg-[#cbf281] pl-3 lg:flex-row flex-col-reverse"
+      class="min-h-[80vh] md:min-h-screen items-center bg-[#ffff] pl-3 md:flex-row lg:flex-row flex-col-reverse pt-16 pb-16 "
     >
       <h2
         class="header-skills"
-        className="text-center text-5xl font-mono p-8 mb-4"
+        className="text-center lg:text-center font-mono p-8 mb-4 text-2xl lg:text-4xl font-bold text-[#a5b4fc]  pt-16 pb-16 "
       >
-        Skills
+        My Skill Set
       </h2>
+      <div>
       <div className="right-skills">
         <div className="skills-set" id="skillsUpdate">
-          <p> JScript</p>
+
           <img src={jsPic} alt="js" className="font-mono" />
         </div>
 
         <div className="skills-set">
-          <p> Node</p>
+
           <img src={nodePic} alt="node" />
         </div>
 
         <div className="skills-set" id="skillsUpdate">
-          <p> React </p>
+
           <img src={reactPic} alt="react" />
         </div>
 
         <div className="skills-set">
-          <p>VSCode</p>
+
           <img src={vscodePic} alt="vsCode" />
         </div>
 
         <div className="skills-set" id="skillsUpdate">
-          <p>Redux</p>
+
           <img src={reduxPic} alt="redux" />
         </div>
 
         <div className="skills-set">
-          <p> Figma</p>
+
           <img src={figmaPic} alt="figma" />
         </div>
+      </div>
       </div>
     </section>
   );
