@@ -130,7 +130,7 @@
     text-align: left;
     justify-content: space-between;
     filter: drop-shadow(8px 4px 10px gray);
-    padding-right: 20px;
+
     flex-direction: column;
     max-height: 150px;
     min-height: 100vh;
@@ -141,7 +141,7 @@
     width: min-content;
   }
   .text-project-tag {
-    padding-right: 20px;
+
     flex-direction: column;
     max-height: 150px;
 
@@ -154,7 +154,7 @@
     padding: 1px;
   }
   .section-project {
-    padding-right: 20px;
+  
     flex-direction: row;
     max-height: 150px;
     font-size: 12px;
