@@ -99,6 +99,7 @@
   align-items: center;
   text-align: center;
   transform: translateX(18.5vh);
+  display: grid;
 }
 .links-projects {
   /*  display: flex;
