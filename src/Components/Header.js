@@ -11,7 +11,7 @@ const Header = () => {
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 pt-16 group ">
         <img
           src={headerPic}
-          className="w-40 lg:w-72 aspect-auto drop-shadow-xl  rounded-[2rem] pb-4 lg:pb-0 opacity-50 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          className="w-[12vw] aspect-auto drop-shadow-xl  rounded-[2rem] pb-4 lg:pb-0 opacity-50 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         />
       </div>
       <div className="pb-12"></div>
