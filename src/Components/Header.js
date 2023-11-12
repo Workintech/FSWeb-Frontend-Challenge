@@ -5,13 +5,13 @@ import Button from "../Utils/Button";
 const Header = () => {
   return (
     <div className="w-screen h-screen flex justify-center items-center lg:w-screen">
-    <section className="min-h-screen  bg-[#ffffff]  p-20 rounded  flex h-2/3 lg:flex-row flex-col-reverse justify-center items-center w-screen">
+    <section className="min-h-screen  bg-[#ffffff]  p-4 lg:p-20 rounded  flex h-2/3 lg:flex-row flex-col-reverse justify-center items-center w-screen">
       <div className="space-y-16 pt-25 mt-10 pb-4">
         <div>
         <div className="absolute top-0 left-1/2 transform -translate-x-1/2 pt-16 group ">
         <img
           src={headerPic}
-          className="max-w-[11rem] aspect-auto drop-shadow-xl  rounded-[2rem] pb-4 opacity-50 hover:opacity-100 transition-opacity duration-300 ease-in-out"
+          className="w-40 lg:w-72 aspect-auto drop-shadow-xl  rounded-[2rem] pb-4 lg:pb-0 opacity-50 hover:opacity-100 transition-opacity duration-300 ease-in-out"
         />
       </div>
       <div className="pb-12"></div>
