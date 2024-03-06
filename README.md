@@ -32,8 +32,6 @@ Not\* Bu dökümanın en sonunda da, sunumda seni değerlendireceğimiz başlık
 - [ ] Tasarımdaki her bir section için ayrı bir component oluşturun.
 - [ ] Her component'in style'ını ayarlayın.
 - [ ] Verilerinizi kendi oluşturduğunuz, mock (örnek) verileri statik bir json dosyasından çekin.
-- [ ] `axios` ve reqres.in gibi bir servisle, web API simüle et. [https://reqres.in/api/workintech](https://reqres.in/workintech) veya benzeri
-    ücretsiz bir mock api servisine, `axios` ile POST ile kendi datanızı atıp, gelen mock datayı arayüze basabilirsin.
 - [ ] Dark Mode tasarımı da entegre edin.
 - [ ] Türkçe-İngilizce içerik oluşturun.
 - [ ] Responsive özelleştirmelerini yapın. Mobil ve tablet gibi farklı cihaz boyutları için, tasarımda biraz değişiklik yapabilirsin. Buralarda insiyatif kullanabilirsin.
@@ -43,12 +41,12 @@ Not\* Bu dökümanın en sonunda da, sunumda seni değerlendireceğimiz başlık
 - Tasarımı birebir uygulamalısın.
   - Resimleri ve projeleri kendi projelerinle güncelleyebilirsin. Yine de kesinlikle **renkler ve yerleşimde** değişiklik istemiyoruz.
   - Sunumdan sonra dilersen sonrasında kendi portföyün için özelleştirebilirsin.
-- Axios ile Reqres veya MockAPI ile dış kaynakla iletişim kurabildiğini gösterebilmelisin.
+- Axios ile Reqres (yereldeki data.js, POST) veya başka bir MockAPI servisi ile dış kaynakla iletişim kurabildiğini gösterebilmelisin. Dış servis ile iletişim kurmayı projenin en sonuna atın. Önceliği en düşük kısım bu. Dış servis kurmayı ileride öğreneceksiniz. https://mockapi.io veya benzeri bir servisle zaman kaybedip, asıl yapmanız gerekenleri öncelik sırasına göre yapmayıp, talimat dışına çıkarsanız düşük not alabilirsiniz.
   
 
 > Böylece backende geçince de yönetim paneli yazıp, hem kod kalitesi hem yapabildiğiniz her şeyi tek projede birleştirmiş olacaksınız.
 
-### İstenilen Veri Diagramı
+### Temsili Veri Akış Diagramı
 
 ```mermaid
 graph LR
@@ -228,13 +226,6 @@ Projenizi vercel.com veya render.com yayınlayın.
 
 ## 9. Uygulama verilerini contextApi, Redux veya benzeri bir Global Store kullanarak yönetebilir.(%25)
 ### 1 - Beklentilerin Altında
-
-  -   **Proje Yayınlama:** Aday, projeyi herhangi bir serviste yayınlamak için gerekli adımları tam olarak anlamamış veya takip edememiş. Vercel, Render.com gibi servisleri kullanma konusunda belirgin bir bilgi eksikliği veya yanlış uygulamalar gösteriyor. 
-  -   **Yayınlanmış Proje Sayısı:** 0 veya 1.
-  -   **Hata Yönetimi:** Yayınlama sırasında karşılaşılan hataları çözmede zorlanıyor, hata mesajlarını anlamada veya sorunları gidermede yetersiz kalıyor.
-  -   **Dökümantasyon ve Konfigürasyon:** Proje konfigürasyonu ve dökümantasyonu eksik veya kendi projesiyle, servislerin sağladığı özellikleri ve konfigürasyonları karşılaştırıp, doğru bir şekilde uygulayamıyor.
-
-### 2 - Gereklilikleri Karşılar### 1 - Beklentilerin Altında
 
   -   **Global Store Kullanımı:** Redux veya Context API kullanılmamış veya çok sınırlı ve yanlış bir şekilde kullanılmış. Örneğin, global store var ancak uygulamanın önemli verileri lokal component state'lerinde tutuluyor.
   -   **Dil Seçimi ve Tema Değişikliği:** Dil seçimi ve tema (dark mode) değişikliği gibi özellikler global store üzerinden yönetilmiyor. Bu tür kullanıcı tercihleri, her bir component içerisinde ayrı ayrı yönetiliyor veya tamamen statik bir şekilde uygulanmış.
