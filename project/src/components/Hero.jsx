@@ -6,7 +6,7 @@ export default function Hero (){
 
     return(
         <>
-        <header>
+        <header >
             Buraya darkmode ve dil seçeneği gelecek
         </header>
         <div>

@@ -10,7 +10,10 @@ function App() {
 
   return (
     <>
-      <header>
+    <h1 className="text-3xl font-bold underline">
+      Hello world!
+    </h1>
+      <header  className="bg-slate-200">
         <Hero/>
       </header>
       <main>
