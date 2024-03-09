@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#root {
+    padding: 0;
+    font-family: Inter;
+    text-align: start;
+}
