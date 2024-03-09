@@ -10,17 +10,18 @@ function App() {
 
   return (
     <>
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-      <header  className="bg-slate-200">
+      <header  className="bg-slate-200 flex">
         <Hero/>
       </header>
-      <main>
+      <div>
         <Skills/>
+      </div>
+      <div  className="bg-slate-200">
         <Profile/>
+      </div>
+      <div>
         <Projects/>
-      </main>
+      </div>
       <footer>
         <Footer/>
       </footer>
