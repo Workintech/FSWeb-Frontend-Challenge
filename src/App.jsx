@@ -6,12 +6,14 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Header from './components/Header';
+import Ornaments from './components/Ornaments';
 
 function App() {
 
   return (
     <>
     <main>
+      <Ornaments />
       <section  className="bg-zinc-100 ">
         <Header />
         <Hero/>
