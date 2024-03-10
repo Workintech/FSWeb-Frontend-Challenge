@@ -1,7 +1,7 @@
 import { useState } from "react"
 import linkedinLogo from "../assets/linkedin.svg"
 import githubLogo from "../assets/github.svg"
-import profilePic from "../assets/foto.jpg"
+import profilePic from "../assets/images/foto.jpg"
 
 export default function Hero (){
     //Buradaki içerik state olarak gelecek
@@ -19,15 +19,15 @@ export default function Hero (){
             </section>
             <footer className="py-2">
                 <div className="mt-2">
-                    <a href="https://tr.linkedin.com/in/ilsu-sunal" target="_blank">
+                    <a href="" target="_blank">
                         <img src={linkedinLogo} className="logo linkedin" alt="Linkedin logo" />
                     </a>
-                    <a href="https://github.com/ilsusunal" target="_blank">
+                    <a href="" target="_blank">
                         <img src={githubLogo} className="logo github" alt="Github logo" />
                     </a>
                 </div>
                 <p className="my-2" >Currently Freelancing for UX, UI, & Web Design Project.</p>
-                <p>Invite me to join your team - <a href="http://sunalilsu@gmail.com">sunalilsu@gmail.com</a></p>
+                <p>Invite me to join your team - <a className="text-pink2" href="">pratamaiosi@gmail.com</a></p>
             </footer>
         </main>
         

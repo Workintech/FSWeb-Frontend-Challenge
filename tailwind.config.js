@@ -10,6 +10,8 @@ export default {
       colors: {
       'pink2': '#e92577',
       'yellow2': '#ffe86e',
+      'bluecard': '#ddeefe',
+      'greencard': '#d9f6f1',
       }
     },
     
