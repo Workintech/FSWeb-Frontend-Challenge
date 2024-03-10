@@ -10,13 +10,13 @@ function App() {
 
   return (
     <>
-      <header  className="bg-slate-200 max-h-[738px] max-w-[1440px]">
+      <header  className="bg-slate-200 ">
         <Hero/>
       </header>
       <div className="flex">
         <Skills/>
       </div>
-      <div  className="bg-slate-200 flex">
+      <div  className="bg-slate-200 ">
         <Profile/>
       </div>
       <div>
