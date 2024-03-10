@@ -10,13 +10,14 @@ function App() {
 
   return (
     <>
-      <header  className="bg-slate-200 ">
+    <main>
+      <section  className="bg-zinc-100 ">
         <Hero/>
-      </header>
-      <div className="flex">
+      </section>
+      <div className="">
         <Skills/>
       </div>
-      <div  className="bg-slate-200 ">
+      <div  className="bg-zinc-100 ">
         <Profile/>
       </div>
       <div>
@@ -25,6 +26,7 @@ function App() {
       <footer>
         <Footer/>
       </footer>
+    </main>
     </>
   )
 }
