@@ -1,7 +1,12 @@
+import greyCircle from "../assets/shapes/greycircle.png"
+
 export default function Header (){
     //Buradaki içerik state olarak gelecek
     return(
         <>
+        <div className="relative">
+            <img className="absolute left-1/4 z-0 " src={greyCircle} alt="" />
+        </div>
         <header className="flex justify-end px-10 pb-8 pt-20 md:px-60" >
             <label className="inline-flex items-center cursor-pointer">
                 <input type="checkbox" value="" className="sr-only peer"/>

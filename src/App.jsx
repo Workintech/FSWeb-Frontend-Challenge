@@ -6,19 +6,26 @@ import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Header from './components/Header';
-import Ornaments from './components/Ornaments';
+
+import greyDonut from "./assets/shapes/greydonut.png"
+import pinkRec from "./assets/shapes/pinkrec.png"
+import greyRec from "./assets/shapes/greyrec.png"
+import pinkDonut from "./assets/shapes/pinkdonut.png"
 
 function App() {
 
   return (
     <>
     <main>
-      <Ornaments />
-      <section  className="bg-zinc-100 ">
+      <section  className="bg-zinc-100 relative ">
+        <img className="absolute right-0 top-2/3 md:top-3/4" src={pinkRec} alt="" />
+        <img className="absolute left-4 md:left-2/3 -bottom-16" src={greyDonut} alt="" />
         <Header />
         <Hero/>
       </section>
-      <div className="">
+      <div className="relative">
+        <img className="absolute top-full md:top-3/4" src={greyRec} alt="" />
+        <img className="absolute right-0 -bottom-44 md:-bottom-24" src={pinkDonut} alt="" />
         <Skills/>
       </div>
       <div  className="bg-zinc-100 ">
