@@ -5,20 +5,17 @@ import greyRec from "../assets/shapes/greyrec.png"
 import pinkDonut from "../assets/shapes/pinkdonut.png"
 
 export default function Ornaments() {
+    {/* 
+            <img className="absolute " src={greyDonut} alt="" />
+            <img className="absolute " src={greyRec} alt="" />
+            <img className="absolute " src={pinkDonut} alt="" /> */}
     return(
         <>
         <div className="relative">
-            <img className="absolute top-0 left-1/4 -translate-x-1/2" src={greyCircle} alt="" />
-            <img className="absolute left-0 translate-y-96" src={greyRec} alt="" />
-            <img className="absolute left-3/4 translate-y-96" src={greyDonut} alt="" />
+            <img className="absolute left-1/3 z-0 " src={greyCircle} alt="" />
+            <img className="absolute right-0 -top-1/4" src={pinkRec} alt="" />
+
         </div>
-        <div dir="rtl">
-            <div className="relative">
-                <img className="absolute start-0 translate-y-96" src={pinkRec} alt="" />
-                <img className="absolute start-0 translate-y-96" src={pinkDonut} alt="" />
-            </div>
-        </div>
-        
         </>
     )
 }

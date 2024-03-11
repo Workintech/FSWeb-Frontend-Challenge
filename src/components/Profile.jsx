@@ -2,7 +2,7 @@ export default function Profile (){
     //Buradaki içerik state olarak gelecek
     return(
         <>
-        <main className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+        <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
             <h2 className="text-4xl tracking-wide font-medium  pb-10">Profile</h2>
             <section className="grid md:grid-cols-2">
                 <div className="bg-white rounded-2xl px-4 py-6">

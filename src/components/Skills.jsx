@@ -9,7 +9,7 @@ export default function Skills (){
     //Buradaki içerik maple yazılacak
     return(
         <>
-        <main className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+        <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
             <h2 className="text-4xl tracking-wide font-medium  ">Skills</h2>
             <div className="pt-10 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:flex gap-4 md:gap-10">
                 <p><img className="rounded-xl" src={jsLogo} />JAVASCRIPT</p> 

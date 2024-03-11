@@ -4,7 +4,7 @@ export default function Projects (){
     //Buradaki içerik maple yazılacak
     return(
         <>
-        <main className="px-10 py-10 md:px-40 md:py-20 flex flex-col items-center">
+        <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
             <h2 className="text-4xl tracking-wide font-medium pb-10">Projects</h2>
             <div className=" grid md:grid-cols-2 gap-10">
                <section className="bg-bluecard rounded-2xl w-full px-6 py-8">
