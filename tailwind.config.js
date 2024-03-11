@@ -12,6 +12,7 @@ export default {
       'yellow2': '#ffe86e',
       'bluecard': '#ddeefe',
       'greencard': '#d9f6f1',
+      'blue2': '#82bbff'
       }
     },
     

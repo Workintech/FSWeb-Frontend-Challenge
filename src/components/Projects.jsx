@@ -35,7 +35,7 @@ export default function Projects (){
                                 <p key={tagIndex} className="bg-white rounded-3xl py-2 px-3">{tag}</p>
                                 ))}
                         </div>
-                        <div className="flex justify-between text-xl font-medium py-4 mb-40 md:mb-50">
+                        <div className="flex justify-between text-xl font-medium py-4 mb-40 md:mb-60">
                             <a href={project.githubLink}>View on Github</a>
                             <a href={project.appLink}>Go to App -</a>
                         </div>  
