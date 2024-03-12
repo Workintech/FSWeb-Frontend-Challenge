@@ -26,7 +26,7 @@ export default function Hero (){
                         {intro}  
                     </p>
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="bg-pink2 rounded-md absolute w-24 md:w-40 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-10"></div>
+                        <div className="bg-pink2 rounded-md absolute w-24 md:w-40 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-4 md:top-10"></div>
                     </div> 
                 </div>
                 <div className={darkMode ? "flex gap-4 mt-4 stroke-white" : "flex gap-4 mt-4"}>

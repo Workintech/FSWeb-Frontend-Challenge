@@ -29,7 +29,9 @@ export default function Projects (){
                             <a href={project.appLink}>{project.app}</a>
                         </div>  
                     </div>
-                    <img src={computerImage} className="absolute bottom-0 w-full left-1/2 transform -translate-x-1/2 translate-y-1/4 mt-6" alt="" />
+                    <img src={project.img} className="absolute bottom-0 w-full left-1/2 transform -translate-x-1/2 translate-y-1/4 mt-6" alt="" />
+                    <img src={computerImage} className="absolute bottom-0 scale-105 left-1/2 transform -translate-x-1/2 translate-y-1/4 mt-6" alt="" />
+                    
                 </section>
             ))}
             </div>

@@ -24,7 +24,8 @@
         "githubLink": "#",
         "github": "View on Github",
         "appLink": "#",
-        "app": "Go to App ->"
+        "app": "Go to App ->",
+        "img":"public/images/project1.jpg"
     },
     {
         "title": "Are you bored?",
@@ -33,7 +34,8 @@
         "githubLink": "#",
         "github": "View on Github",
         "appLink": "#",
-        "app": "Go to App ->"
+        "app": "Go to App ->",
+        "img":"public/images/project2.jpg"
     }],
     "goodbye": "Let’s work together on your next product."
     

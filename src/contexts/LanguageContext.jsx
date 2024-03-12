@@ -27,7 +27,6 @@ const LanguageProvider = ({ children }) => {
         const fetchData = async () => {
             await loadTranslations();
         };
-
         fetchData();
     }, [language]);
 

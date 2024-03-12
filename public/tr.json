@@ -24,7 +24,8 @@
         "githubLink": "#",
         "github": "Github'da Görüntüle",
         "appLink": "#",
-        "app": "Uygulamaya Git ->"
+        "app": "Uygulamaya Git ->",
+        "img":"public/images/project1.jpg"
     },
     {
         "title": "Sıkıldın mı?",
@@ -33,7 +34,8 @@
         "githubLink": "#",
         "github": "Github'da Görüntüle",
         "appLink": "#",
-        "app": "Uygulamaya Git ->"
+        "app": "Uygulamaya Git ->",
+        "img":"public/images/project2.jpg"
     }],
     "goodbye": "Hadi bir sonraki projende birlikte çalışalım."
     
