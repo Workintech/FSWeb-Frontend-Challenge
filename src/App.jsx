@@ -11,38 +11,34 @@ import greyDonut from "./assets/shapes/greydonut.png"
 import pinkRec from "./assets/shapes/pinkrec.png"
 import greyRec from "./assets/shapes/greyrec.png"
 import pinkDonut from "./assets/shapes/pinkdonut.png"
-import useLocalStorage from './hooks/useLocalStorage';
-import { LanguageProvider } from './contexts/LanguageContext';
+import { useDarkMode } from './contexts/DarkModeContext';
 
 function App() {
-  
-  const [darkMode, setDarkMode] = useLocalStorage('s12', true);
+  const { darkMode } = useDarkMode();
 
   return (
-    <LanguageProvider>
-    <main className='dark:bg-blue-950'>
-      <section  className="bg-zinc-100 relative ">
-        <img className="absolute right-0 top-2/3 md:top-3/4" src={pinkRec} alt="" />
-        <img className="absolute left-4 md:left-2/3 -bottom-16" src={greyDonut} alt="" />
-        <Header />
-        <Hero/>
-      </section>
-      <div className="relative">
-        <img className="absolute top-full md:top-3/4" src={greyRec} alt="" />
-        <img className="absolute right-0 -bottom-44 md:-bottom-24" src={pinkDonut} alt="" />
-        <Skills/>
-      </div>
-      <div  className="bg-zinc-100 ">
-        <Profile/>
-      </div>
-      <div>
-        <Projects/>
-      </div>
-      <footer>
-        <Footer/>
-      </footer>
-    </main>
-    </LanguageProvider>
+        <main className={darkMode ? "bg-acikkahve text-white" :"bg-white relative "}>
+          <section  className={darkMode ? "bg-koyukahve" :"bg-zinc-100 relative "}>
+            <img className="absolute right-0 top-2/4 md:top-3/4" src={pinkRec} alt="" />
+            <img className="absolute left-4 md:left-2/3 -bottom-16" src={greyDonut} alt="" />
+            <Header />
+            <Hero/>
+          </section>
+          <div className="relative">
+            <img className="absolute top-full md:top-3/4" src={greyRec} alt="" />
+            <img className="absolute right-0 -bottom-44 md:-bottom-24" src={pinkDonut} alt="" />
+            <Skills/>
+          </div>
+          <div  className={darkMode ? "bg-koyukahve" :"bg-zinc-100"}>
+            <Profile/>
+          </div>
+          <div>
+            <Projects/>
+          </div>
+          <footer>
+            <Footer/>
+          </footer>
+        </main>
   )
 }
 

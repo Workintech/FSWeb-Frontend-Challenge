@@ -17,14 +17,14 @@ export default function Hero (){
     return(
         <>
         <main className="px-10 py-1 md:px-60 md:pb-20 gap-4 md:gap-x-20 grid md:grid-cols-3 items-center ">
-            <section className="md:col-span-2  ">
+            <section className="md:col-span-2 md:pl-10 ">
                 <h1 className="text-xl mt-4 tracking-wider">{greeting}</h1>
                 <div className="relative">
-                    <p className="text-3xl md:text-4xl mt-4 mb-8 tracking-wide font-medium leading-loose relative z-10">
+                    <p className="md:leading-loose text-2xl md:text-4xl mt-4 mb-8 tracking-wide font-medium  relative z-10">
                         {intro}  
                     </p>
                     <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="bg-pink2 rounded-md absolute w-24 md:w-32 h-8 left-0 md:-left-5 bottom-[-2rem] top-5"></div>
+                        <div className="bg-pink2 rounded-md absolute w-24 md:w-32 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-5"></div>
                     </div> 
                 </div>
                  

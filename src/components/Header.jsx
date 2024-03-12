@@ -1,9 +1,10 @@
-import { useContext } from "react";
 import greyCircle from "../assets/shapes/greycircle.png"
-import { LanguageContext } from "../contexts/LanguageContext"
 import LanguageToggle from "./LanguageToggle";
+import { useDarkMode } from "../contexts/DarkModeContext";
 
 export default function Header (){
+    const { darkMode, toggleDarkMode } = useDarkMode();
+    console.log("Dark-mode check:", darkMode);
     return(
         <>
         <div className="relative">
@@ -11,7 +12,7 @@ export default function Header (){
         </div>
         <header className="flex justify-end px-10 pb-8 pt-20 md:px-60" >
             <label className="inline-flex items-center cursor-pointer">
-                <input type="checkbox" value="" className="sr-only peer"/>
+                <input type="checkbox" value="" className="sr-only peer" checked={darkMode} onChange={toggleDarkMode}/>
                 <div className="relative w-11 h-6 rounded-full peer dark:bg-pink-400 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full  after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-yellow2  after:rounded-full after:h-5 after:w-5 after:transition-all  peer-checked:bg-pink2"></div>
                 <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">DARK MODE</span>
             </label>
