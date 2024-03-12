@@ -3,16 +3,15 @@ import linkedinLogo from "../assets/linkedin.svg"
 import githubLogo from "../assets/github.svg"
 import profilePic from "../assets/images/foto.jpg"
 import { LanguageContext } from "../contexts/LanguageContext"
+import { useDarkMode } from "../contexts/DarkModeContext"
 
 export default function Hero (){
     const { translations, language } = useContext(LanguageContext);
     console.log("Translations:", translations);
     console.log("Language:", language);
 
-    const greeting = translations.greeting;
-    const intro = translations.intro;
-    const social1 = translations.social1;
-    const social2 = translations.social2;
+    const {greeting, intro, social1, social2} = translations;
+    const { darkMode } = useDarkMode();
 
     return(
         <>
@@ -28,7 +27,7 @@ export default function Hero (){
                     </div> 
                 </div>
                  
-                <div className="flex gap-4 mt-4">
+                <div className={darkMode ? "flex gap-4 mt-4 stroke-white" : "flex gap-4 mt-4"}>
                     <a href="" target="_blank">
                         <img src={linkedinLogo} className="logo linkedin" alt="Linkedin logo" />
                     </a>

@@ -14,7 +14,9 @@ export default {
       'greencard': '#d9f6f1',
       'blue2': '#82bbff',
       'acikkahve':'#484148',
-      'koyukahve': '#2a262b'
+      'koyukahve': '#2a262b',
+      'koyuyesil': '#2d3235',
+      'solukyesil': '#495351'
       }
     },
     

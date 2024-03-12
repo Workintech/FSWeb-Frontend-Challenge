@@ -1,17 +1,20 @@
-import { useState } from 'react'
+import './App.css';
+import { useDarkMode } from './contexts/DarkModeContext';
+
 import Hero from "./components/Hero";
-import './App.css'
 import Footer from './components/Footer';
 import Profile from './components/Profile';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import Header from './components/Header';
 
+
 import greyDonut from "./assets/shapes/greydonut.png"
 import pinkRec from "./assets/shapes/pinkrec.png"
 import greyRec from "./assets/shapes/greyrec.png"
 import pinkDonut from "./assets/shapes/pinkdonut.png"
-import { useDarkMode } from './contexts/DarkModeContext';
+import greyCircle from "./assets/shapes/greycircle.png"
+
 
 function App() {
   const { darkMode } = useDarkMode();
@@ -21,6 +24,7 @@ function App() {
           <section  className={darkMode ? "bg-koyukahve" :"bg-zinc-100 relative "}>
             <img className="absolute right-0 top-2/4 md:top-3/4" src={pinkRec} alt="" />
             <img className="absolute left-4 md:left-2/3 -bottom-16" src={greyDonut} alt="" />
+            <img className="absolute left-1/4 z-0 " src={greyCircle} alt="" />
             <Header />
             <Hero/>
           </section>
