@@ -1,7 +1,9 @@
+import { useContext } from "react";
 import greyCircle from "../assets/shapes/greycircle.png"
+import { LanguageContext } from "../contexts/LanguageContext"
+import LanguageToggle from "./LanguageToggle";
 
 export default function Header (){
-    //Buradaki içerik state olarak gelecek
     return(
         <>
         <div className="relative">
@@ -14,7 +16,7 @@ export default function Header (){
                 <span className="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">DARK MODE</span>
             </label>
             <p className="px-4"> | </p>
-            <div>TÜRKÇE'YE GEÇ</div>
+            <LanguageToggle/>
         </header>
         </>
     )

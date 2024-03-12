@@ -1,0 +1,14 @@
+{
+    "id":1,
+    "lang": "ENGLISH",
+    "greeting": "Hi!",
+    "intro": "I’m Almila. I’m a full-stack developer. I can craft solid and scalable frontend products. Let’s meet!",
+    "social": "Currently Freelancing for UX, UI, & Web Design Project. Invite me to join your team -> pratamaiosi@gmail.com",
+    "skills": "Skills",
+    "profile": "Profile",
+    "info": "Basic Information",
+    "about": "About me",
+    "aboutInfo": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
+    "projects": "Projects"
+    
+}

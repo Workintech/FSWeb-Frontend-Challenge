@@ -12,14 +12,14 @@ import pinkRec from "./assets/shapes/pinkrec.png"
 import greyRec from "./assets/shapes/greyrec.png"
 import pinkDonut from "./assets/shapes/pinkdonut.png"
 import useLocalStorage from './hooks/useLocalStorage';
+import { LanguageProvider } from './contexts/LanguageContext';
 
 function App() {
   
   const [darkMode, setDarkMode] = useLocalStorage('s12', true);
-  const [lang, setLang] = useState("eng");
 
   return (
-    <>
+    <LanguageProvider>
     <main className='dark:bg-blue-950'>
       <section  className="bg-zinc-100 relative ">
         <img className="absolute right-0 top-2/3 md:top-3/4" src={pinkRec} alt="" />
@@ -42,7 +42,7 @@ function App() {
         <Footer/>
       </footer>
     </main>
-    </>
+    </LanguageProvider>
   )
 }
 
