@@ -16,6 +16,26 @@
     },
     "about": "Hakkımda",
     "aboutInfo": "TÜRKÇE METİN: Lorem ipsum, Çolor sit ğamet üconsectetur çççadipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-    "projectsTitle": "Projeler"
+    "projectsTitle": "Projeler",
+    "projects": [{
+        "title": "Rastgele Şakalar",
+        "description": "TÜRKÇE : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+        "tags": ["react", "vercel", "axios", "router"],
+        "githubLink": "#",
+        "github": "Github'da Görüntüle",
+        "appLink": "#",
+        "app": "Uygulamaya Git ->"
+    },
+    {
+        "title": "Sıkıldın mı?",
+        "description": "TÜRKÇE : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+        "tags": ["react", "redux", "axios", "router", "vercel"],
+        "githubLink": "#",
+        "github": "Github'da Görüntüle",
+        "appLink": "#",
+        "app": "Uygulamaya Git ->"
+    }],
+    "goodbye": "Hadi bir sonraki projende birlikte çalışalım."
+    
     
 }

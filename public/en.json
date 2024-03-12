@@ -16,6 +16,26 @@
     },
     "about": "About me",
     "aboutInfo": "ENGLISH TEXT: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-    "projectsTitle": "Projects"
+    "projectsTitle": "Projects",
+    "projects": [{
+        "title": "Random Jokes",
+        "description": "ENGLISH : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia.",
+        "tags": ["react", "vercel", "axios", "router"],
+        "githubLink": "#",
+        "github": "View on Github",
+        "appLink": "#",
+        "app": "Go to App ->"
+    },
+    {
+        "title": "Are you bored?",
+        "description": "ENGLISH : Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia minima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
+        "tags": ["react", "redux", "axios", "router", "vercel"],
+        "githubLink": "#",
+        "github": "View on Github",
+        "appLink": "#",
+        "app": "Go to App ->"
+    }],
+    "goodbye": "Let’s work together on your next product."
+    
     
 }
