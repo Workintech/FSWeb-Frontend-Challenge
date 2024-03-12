@@ -33,7 +33,7 @@ export default function Profile (){
                     <div className="relative">
                         <h2 className="text-xl font-medium py-8 z-10 relative font-playfair tracking-wide">{about}</h2>
                         <div className="absolute inset-0 flex items-center justify-center z-0">
-                            <div className="bg-blue2 rounded-md absolute w-18 md:w-24 h-4 left-0 md:-left-8 bottom-[-2rem] top-8"></div>
+                            <div className="bg-blue2 rounded-md absolute w-18 md:w-24 h-4 left-0 md:-left-8 bottom-[-2rem] top-12"></div>
                         </div> 
                     </div>                   
                     <p>{aboutInfo}</p>
