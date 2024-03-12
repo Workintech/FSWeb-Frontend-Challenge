@@ -4,17 +4,17 @@ import useLocalStorage from '../hooks/useLocalStorage';
 const DarkModeContext = createContext();
 
 export const DarkModeProvider = ({ children }) => {
-  const [darkMode, setDarkMode] = useLocalStorage("dark", false);
+  const [theme, setTheme] = useLocalStorage("theme", "light");
 
-  const toggleDarkMode = () => {
-    setDarkMode(prevMode => !prevMode);
+  const toggleTheme = () => {
+    setTheme((curr) => curr === "light" ? "dark" : "light" );
   };
 
   return (
-    <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+    <DarkModeContext.Provider value={{ theme, toggleTheme }}>
       {children}
     </DarkModeContext.Provider>
   );
 };
 
-export const useDarkMode = () => useContext(DarkModeContext);
+export const useTheme = () => useContext(DarkModeContext);

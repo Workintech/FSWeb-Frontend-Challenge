@@ -1,10 +1,10 @@
-import { useDarkMode } from "../contexts/DarkModeContext";
+import { useTheme } from "../contexts/DarkModeContext";
 import { LanguageContext } from "../contexts/LanguageContext"
 import React, { useContext } from "react"
 
 export default function Profile (){
     const { translations } = useContext(LanguageContext);
-    const { darkMode } = useDarkMode();
+    const { theme } = useTheme();
 
     const { profileTitle, infoTitle, about, aboutInfo, info } = translations;
 
@@ -14,7 +14,7 @@ export default function Profile (){
             <h2 className="text-4xl tracking-wide font-medium  pb-10">{profileTitle}</h2>
             <div className="grid md:grid-cols-2">
                 <section className="relative">
-                    <div className={darkMode ? "bg-neutral-600 rounded-2xl p-6 relative z-10" :"bg-white rounded-2xl p-6 relative z-10"}>
+                    <div className={theme === "dark" ? "bg-neutral-600 rounded-2xl p-6 relative z-10" :"bg-white rounded-2xl p-6 relative z-10"}>
                         <h2 className="text-xl text-pink2 font-medium my-6 z-10 font-playfair tracking-wide">{infoTitle}</h2>
                         <div className="grid grid-cols-2 gap-4 z-10">
                             {Object.keys(info).map((key) => (

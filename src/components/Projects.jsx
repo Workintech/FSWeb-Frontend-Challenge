@@ -1,11 +1,11 @@
 import computerImage from "../assets/images/computer.png"
 import { LanguageContext } from "../contexts/LanguageContext"
 import { useContext } from "react"
-import { useDarkMode } from "../contexts/DarkModeContext";
+import { useTheme } from "../contexts/DarkModeContext";
 
 export default function Projects (){
     const { translations } = useContext(LanguageContext);
-    const { darkMode } = useDarkMode();
+    const { theme } = useTheme();
 
     const { projectsTitle, projects } = translations;
 
@@ -15,13 +15,13 @@ export default function Projects (){
             <h2 className="text-4xl tracking-wide font-medium pb-10">{projectsTitle}</h2>
             <div className=" grid md:grid-cols-2 gap-20">
             {projects.map((project, index) => (
-                <section key={index} className={`rounded-2xl w-full px-6 py-8 relative ${index % 2 === 0 ? (darkMode ? "bg-koyuyesil" : "bg-bluecard") : (darkMode ? "bg-solukyesil" : "bg-greencard")}`}>
+                <section key={index} className={`rounded-2xl w-full px-6 py-8 relative ${index % 2 === 0 ? (theme === "dark" ? "bg-koyuyesil" : "bg-bluecard") : (theme === "dark" ? "bg-solukyesil" : "bg-greencard")}`}>
                     <div className="">
                         <h2 className="text-3xl font-medium py-4 font-playfair tracking-wide">{project.title}</h2>
                         <p className="">{project.description}</p>
                         <div className="flex flex-wrap gap-2 py-4 mt-6 text-xl font-playfair tracking-wide">
                             {project.tags.map((tag, tagIndex) => (
-                                <p key={tagIndex} className={darkMode ? "bg-neutral-500 rounded-3xl py-1 px-6 " : "bg-white rounded-3xl py-1 px-6 "}>{tag}</p>
+                                <p key={tagIndex} className={theme === "dark" ? "bg-neutral-500 rounded-3xl py-1 px-6 " : "bg-white rounded-3xl py-1 px-6 "}>{tag}</p>
                                 ))}
                         </div>
                         <div className="flex justify-between text-xl font-medium py-4 mb-40 md:mb-60">
