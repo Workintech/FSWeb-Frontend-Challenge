@@ -8,9 +8,11 @@ export default function Hero (){
     const { translations, language } = useContext(LanguageContext);
     console.log("Translations:", translations);
     console.log("Language:", language);
-    
+
     const greeting = translations.greeting;
     const intro = translations.intro;
+    const social1 = translations.social1;
+    const social2 = translations.social2;
 
     return(
         <>
@@ -35,8 +37,8 @@ export default function Hero (){
                     </a>
                 </div>
                 <div className="py-4">
-                    <p className="my-2" >Currently Freelancing for UX, UI, & Web Design Project.</p>
-                    <p>Invite me to join your team - <a className="text-pink2" href="">pratamaiosi@gmail.com</a></p> 
+                    <p className="my-2" >{social1}</p>
+                    <p>{social2}</p> 
                 </div>
             </section>
             <section className="items-start py-20 relative">

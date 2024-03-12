@@ -1,14 +1,21 @@
 {
-    "id":1,
-    "lang": "ENGLISH",
+    "id": "tr",
+    "lang": "TÜRKÇE",
     "greeting": "Merhaba!",
-    "intro": "Ben Almila! Fullstack web geliştiriciyim. Güvenilir frontend ürünleri geliştiriyorum. Hadi tanışalım!",
-    "social": "Şu an freelance olarak UX, UI ve Web Tasarımı yapıyorum. Takımına katılmamı istiyorsan ->  pratamaiosi@gmail.com",
-    "skills": "Beceriler",
-    "profile": "Profil",
-    "info": "Kısa Özgeçmiş",
+    "intro": "Ben Almila! Full-stack web geliştiriciyim. Güvenilir frontend ürünleri geliştiriyorum. Hadi tanışalım!",
+    "social1": "Şu an freelance olarak UX, UI ve Web Tasarımı yapıyorum.",
+    "social2": "Takımına katılmamı istiyorsan ->  pratamaiosi@gmail.com",
+    "skillsTitle": "Beceriler",
+    "profileTitle": "Profil",
+    "infoTitle": "Kısa Özgeçmiş",
+    "info": {
+        "Doğum Tarihi": "Mart 24, 1996",
+        "İkamet Şehri": "Ankara",
+        "Eğitim Durumu": "Hacettepe Ünv., Biyoloji Lisans, 2016",
+        "Tercih Ettiği Rol": "Frontend, UI"
+    },
     "about": "Hakkımda",
     "aboutInfo": "Lorem ipsum, Çolor sit ğamet üconsectetur çççadipisicing elit. Veniam aut, odit laborum aliquam voluptatum nisi mollitia. Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam! ",
-    "projects": "Projeler"
+    "projectsTitle": "Projeler"
     
 }

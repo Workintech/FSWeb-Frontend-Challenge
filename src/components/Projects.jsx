@@ -1,7 +1,11 @@
 import computerImage from "../assets/images/computer.png"
+import { LanguageContext } from "../contexts/LanguageContext"
+import { useContext } from "react"
+
 export default function Projects (){
-    //Buradaki içerik state olarak gelecek
-    //Buradaki içerik maple yazılacak
+    const { translations } = useContext(LanguageContext);
+    const projectsTitle = translations.projectsTitle;
+
     const projectsData = [
         {
             title: "Random Jokes",
@@ -23,7 +27,7 @@ export default function Projects (){
     return(
         <>
         <main className="px-10 py-10 md:px-60 md:py-20 flex flex-col items-center">
-            <h2 className="text-4xl tracking-wide font-medium pb-10">Projects</h2>
+            <h2 className="text-4xl tracking-wide font-medium pb-10">{projectsTitle}</h2>
             <div className=" grid md:grid-cols-2 gap-10">
             {projectsData.map((project, index) => (
                 <section key={index} className={index % 2 === 0 ? "bg-bluecard rounded-2xl w-full px-6 py-8 relative" : "bg-greencard rounded-2xl w-full px-6 py-8 relative"}>

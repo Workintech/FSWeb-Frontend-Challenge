@@ -1,12 +1,13 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react';
+import useLocalStorage from '../hooks/useLocalStorage';
 
 
 const LanguageContext = createContext(); 
 
 const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState('en');
-  const [translations, setTranslations] = useState({}); // Dil datalarını tutmak için
+    const [language, setLanguage] = useLocalStorage('language', 'en');
+    const [translations, setTranslations] = useLocalStorage('translations', {}); // Dil datalarını tutmak için
 
   // Dil dosyasını yükle
   const loadTranslations = () => {
