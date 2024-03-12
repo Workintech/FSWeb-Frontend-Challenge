@@ -2,41 +2,51 @@ import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react';
 import useLocalStorage from '../hooks/useLocalStorage';
 
-
 const LanguageContext = createContext(); 
 
 const LanguageProvider = ({ children }) => {
     const [language, setLanguage] = useLocalStorage('language', 'en');
-    const [translations, setTranslations] = useLocalStorage('translations', {}); // Dil datalarını tutmak için
+    const [translations, setTranslations] = useLocalStorage('translations', {});
+    const [loading, setLoading] = useState(true); // Sayfanın yüklenme durumu
 
-  // Dil dosyasını yükle
-  const loadTranslations = () => {
-    axios
-    .get(`/${language}.json`)
-    .then(response => {
-        console.log("Loaded translations:", response.data);
-        setTranslations(response.data);   
-    })
-    .catch(error => {
-        console.error('Error loading translations:', error);
-    })
-  };
+    // Dil dosyasını yükle
+    const loadTranslations = async () => {
+        try {
+            const response = await axios.get(`/${language}.json`);
+            console.log("Loaded translations:", response.data);
+            setTranslations(response.data);
+        } catch (error) {
+            console.error('Error loading translations:', error);
+        } finally {
+            setLoading(false); // Data yüklenene kadar sayfa render edilmesin
+        }
+    };
 
-  // Dil değiştiğinde dil dosyasını yükle
-  useEffect(() => {
-    loadTranslations();
-  }, [language]);
+    // Dil değiştiğinde dil dosyasını yükle
+    useEffect(() => {
+        const fetchData = async () => {
+            await loadTranslations();
+        };
 
-  const changeLanguage = (newLanguage) => {
-    // Yeni dili yükleme işlemi
-    setLanguage(newLanguage);
-  };
+        fetchData();
+    }, [language]);
 
-  return (
-    <LanguageContext.Provider value={{ language, translations, changeLanguage }}>
-      {children}
-    </LanguageContext.Provider>
-  );
+    const changeLanguage = (newLanguage) => {
+        // Yeni dili yükleme işlemi
+        setLanguage(newLanguage);
+    };
+
+    // Yüklenme durumunu kontrol et, eğer yükleme tamamlanmadıysa yüklenmeyi bekle
+    if (loading) {
+        return <div>Loading...</div>;
+    }
+
+    // Yükleme tamamlandıysa, dil sağlanarak çocuk bileşenler render edilir
+    return (
+        <LanguageContext.Provider value={{ language, translations, changeLanguage }}>
+            {children}
+        </LanguageContext.Provider>
+    );
 };
 
 export { LanguageProvider, LanguageContext };
