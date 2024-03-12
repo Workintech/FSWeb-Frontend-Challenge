@@ -6,14 +6,17 @@ export default function useLocalStorage(key, defaultValue) {
     const localVal = localStorage.getItem(key);
     try {
       // localStorage'dan gelen değeri JSON.parse() ediyoruz
-      if (localVal === null || localVal === undefined) {
-        // boşsa veya tanımsızsa default değeri dönüyoruz
+      if (localVal === null) {
         return defaultValue;
       } else {
+        console.log("defaultValue TYPE:", typeof defaultValue);
+        console.log("LOCALVAL TYPE:",typeof localVal);
+        console.log("LOCALVAL:", localVal);
         return JSON.parse(localVal);
       }
     } catch (error) {
       // JSON.parse() başarısız olursa veya değer yanlışsa, default değeri dönüyoruz
+      console.log("STORAGE ERROR:", error);
       return defaultValue;
     }
   });
