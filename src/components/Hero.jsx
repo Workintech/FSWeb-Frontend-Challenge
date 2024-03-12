@@ -26,7 +26,6 @@ export default function Hero (){
                         <div className="bg-pink2 rounded-md absolute w-24 md:w-32 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-5"></div>
                     </div> 
                 </div>
-                 
                 <div className={darkMode ? "flex gap-4 mt-4 stroke-white" : "flex gap-4 mt-4"}>
                     <a href="" target="_blank">
                         <img src={linkedinLogo} className="logo linkedin" alt="Linkedin logo" />

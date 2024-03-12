@@ -22,9 +22,9 @@ function App() {
   return (
         <main className={darkMode ? "bg-acikkahve text-white" :"bg-white relative "}>
           <section  className={darkMode ? "bg-koyukahve" :"bg-zinc-100 relative "}>
+            <img className="absolute -left-4 md:left-1/4 z-0 " src={greyCircle} alt="" />
             <img className="absolute right-0 top-2/4 md:top-3/4" src={pinkRec} alt="" />
             <img className="absolute left-4 md:left-2/3 -bottom-16" src={greyDonut} alt="" />
-            <img className="absolute left-1/4 z-0 " src={greyCircle} alt="" />
             <Header />
             <Hero/>
           </section>

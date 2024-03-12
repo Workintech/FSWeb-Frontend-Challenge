@@ -17,11 +17,11 @@ export default function Projects (){
             {projects.map((project, index) => (
                 <section key={index} className={`rounded-2xl w-full px-6 py-8 relative ${index % 2 === 0 ? (darkMode ? "bg-koyuyesil" : "bg-bluecard") : (darkMode ? "bg-solukyesil" : "bg-greencard")}`}>
                     <div className="">
-                        <h2 className="text-3xl font-medium py-4">{project.title}</h2>
+                        <h2 className="text-3xl font-medium py-4 font-playfair tracking-wide">{project.title}</h2>
                         <p className="">{project.description}</p>
-                        <div className="flex flex-wrap gap-2 py-4">
+                        <div className="flex flex-wrap gap-2 py-4 mt-6 text-xl font-playfair tracking-wide">
                             {project.tags.map((tag, tagIndex) => (
-                                <p key={tagIndex} className={darkMode ? "bg-neutral-500 rounded-3xl py-2 px-3" : "bg-white rounded-3xl py-2 px-3"}>{tag}</p>
+                                <p key={tagIndex} className={darkMode ? "bg-neutral-500 rounded-3xl py-1 px-6 " : "bg-white rounded-3xl py-1 px-6 "}>{tag}</p>
                                 ))}
                         </div>
                         <div className="flex justify-between text-xl font-medium py-4 mb-40 md:mb-60">
@@ -29,7 +29,7 @@ export default function Projects (){
                             <a href={project.appLink}>{project.app}</a>
                         </div>  
                     </div>
-                    <img src={computerImage} className="absolute bottom-0 w-full left-1/2 transform -translate-x-1/2 translate-y-1/4" alt="" />
+                    <img src={computerImage} className="absolute bottom-0 w-full left-1/2 transform -translate-x-1/2 translate-y-1/4 mt-6" alt="" />
                 </section>
             ))}
             </div>

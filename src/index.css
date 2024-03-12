@@ -4,8 +4,20 @@
 
 #root {
     padding: 0;
-    font-family: Inter;
+    font-family: Inter, "Playfair Display";
     text-align: start;
     margin: 0;
     max-width: none;
 }
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400&display=swap);
+  }
+  
+  .font-playfair {
+    font-family: 'Playfair Display', serif;
+  }
+  
