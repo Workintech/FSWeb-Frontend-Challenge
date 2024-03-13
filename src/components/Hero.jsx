@@ -25,8 +25,8 @@ export default function Hero (){
 
     return(
         <>
-        <main className="px-10 py-1 md:px-20 lg:px-60 md:pb-20 gap-4 md:gap-x-20 grid md:grid-cols-3 items-center ">
-            <section className="md:col-span-2 md:pl-10">
+        <main className="px-10 py-1 md:px-20 lg:px-60 md:pb-20 gap-4 md:gap-x-20 grid lg:grid-cols-3 items-center ">
+            <section className="lg:col-span-2 md:pl-10">
                 <h1 className="flex text-2xl mt-4 tracking-wider">{greeting} <img src={emoji} alt="" /></h1>
                 <div className="relative">
                     <p className="md:leading-loose text-2xl md:text-4xl mt-4 mb-8 tracking-wide font-medium  relative z-10">

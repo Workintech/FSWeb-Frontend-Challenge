@@ -14,7 +14,7 @@ export default function Profile (){
             <h2 className="text-4xl tracking-wide font-medium  pb-10">{profileTitle}</h2>
             <div className="grid md:grid-cols-2">
                 <section className="relative">
-                    <div className={theme === "dark" ? "bg-neutral-600 rounded-2xl p-6 relative z-10" :"bg-white rounded-2xl p-6 relative z-10"}>
+                    <div className={theme === "dark" ? "bg-neutral-600 rounded-2xl p-6 relative z-10 " :"bg-white rounded-2xl p-6 relative z-10"}>
                         <h2 className="text-xl text-pink2 font-medium my-6 z-10 font-playfair tracking-wide">{infoTitle}</h2>
                         <div className="grid grid-cols-2 gap-4 z-10">
                             {Object.keys(info).map((key) => (
@@ -33,7 +33,7 @@ export default function Profile (){
                     <div className="relative">
                         <h2 className="text-xl font-medium py-8 z-10 relative font-playfair tracking-wide">{about}</h2>
                         <div className="absolute inset-0 flex items-center justify-center z-0">
-                            <div className="bg-blue2 rounded-md absolute w-18 md:w-24 h-4 left-0 md:-left-8 bottom-[-2rem] top-12"></div>
+                            <div className="bg-blue2 rounded-md absolute w-18 md:w-24 h-4 left-0 top-0 md:-left-8 md:bottom-[-2rem] md:top-12"></div>
                         </div> 
                     </div>                   
                     <p>{aboutInfo}</p>
