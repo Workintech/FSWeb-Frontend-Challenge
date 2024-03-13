@@ -16,7 +16,8 @@ export default {
       'acikkahve':'#484148',
       'koyukahve': '#2a262b',
       'koyuyesil': '#2d3235',
-      'solukyesil': '#495351'
+      'solukyesil': '#495351',
+      'gri2': '#777777'
       }
     },
     

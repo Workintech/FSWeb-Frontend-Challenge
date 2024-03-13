@@ -13,7 +13,7 @@ export default function Hero (){
     console.log("Translations:", translations);
     console.log("Language:", language);
 
-    const {greeting, intro, social1, social2} = translations;
+    const {greeting, intro, social1, social2, social3} = translations;
     const { theme } = useTheme();
 
     return(
@@ -39,7 +39,7 @@ export default function Hero (){
                 </div>
                 <div className="py-4">
                     <p className="my-2" >{social1}</p>
-                    <p>{social2}</p> 
+                    <p>{social2} <a href="http://">{social3}</a></p> 
                 </div>
             </section>
             <section className="items-start py-20 relative">

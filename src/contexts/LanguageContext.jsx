@@ -21,18 +21,15 @@ const LanguageProvider = ({ children }) => {
             setLoading(false); // Data yüklenene kadar sayfa render edilmesin
         }
     };
-
-    // Dil değiştiğinde dil dosyasını yükle
     useEffect(() => {
         const fetchData = async () => {
-            await loadTranslations();
+            await loadTranslations();// Dil değiştiğinde dil dosyasını yükle
         };
         fetchData();
     }, [language]);
 
     const changeLanguage = (newLanguage) => {
-        // Yeni dili yükleme işlemi
-        setLanguage(newLanguage);
+        setLanguage(newLanguage); // Yeni dili yükleme işlemi
     };
 
     // Yüklenme durumunu kontrol et, eğer yükleme tamamlanmadıysa yüklenmeyi bekle
