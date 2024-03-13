@@ -9,6 +9,8 @@ import profilePic from "../assets/images/foto.jpg";
 import emoji from "../assets/images/wavinghand.png";
 import usePinkify from "../hooks/usePinkify";
 
+import {ReactComponent as LinkedinIcon} from "../assets/linkedin.svg";
+
 export default function Hero (){
     const { translations, language } = useContext(LanguageContext);
     console.log("Translations:", translations);
@@ -34,12 +36,12 @@ export default function Hero (){
                         <div className="bg-pink2 rounded-md absolute w-24 md:w-40 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-4 md:top-10"></div>
                     </div> 
                 </div>
-                <div className={theme === "dark" ? "flex gap-4 mt-4 stroke-white" : "flex gap-4 mt-4"}>
-                    <a href="" target="_blank">
-                        <img src={linkedinLogo} className="logo linkedin" alt="Linkedin logo" />
+                <div className="flex gap-4 mt-4">
+                    <a className={theme === "dark" ? " fill-white" : "fill-black"} href="" target="_blank">
+                        <LinkedinIcon />
                     </a>
                     <a href="" target="_blank">
-                        <img src={githubLogo} className="logo github" alt="Github logo" />
+                        <img src={githubLogo} alt="Github logo" />
                     </a>
                 </div>
                 <div className="py-4 tracking-wide">
