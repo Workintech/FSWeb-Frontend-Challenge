@@ -14,6 +14,7 @@ import pinkRec from "./assets/shapes/pinkrec.png"
 import greyRec from "./assets/shapes/greyrec.png"
 import pinkDonut from "./assets/shapes/pinkdonut.png"
 import greyCircle from "./assets/shapes/greycircle.png"
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
             <img className="absolute top-full md:top-3/4" src={greyRec} alt="" />
             <img className="absolute right-0 -bottom-44 md:-bottom-24" src={pinkDonut} alt="" />
             <Skills/>
+            <ScrollToTop />
           </div>
           <div  className={theme === "dark" ? "bg-koyukahve" :"bg-zinc-100"}>
             <Profile/>
