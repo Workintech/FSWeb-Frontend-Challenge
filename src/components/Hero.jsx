@@ -1,15 +1,15 @@
-import React, { useContext} from "react";
+import React,  { useContext} from "react";
 
 import { LanguageContext } from "../contexts/LanguageContext";
 import { useTheme} from "../contexts/DarkModeContext";
 
-import linkedinLogo from "../assets/linkedin.svg";
-import githubLogo from "../assets/github.svg";
+import githubbeyaz from "../assets/social/githubbeyaz.png"
+import githubsiyah from "../assets/social/githubsiyah.png"
+import linkedinsiyah from "../assets/social/linkedinsiyah.png"
+import linkedinbeyaz from "../assets/social/linkedinbeyaz.png"
 import profilePic from "../assets/images/foto.jpg";
 import emoji from "../assets/images/wavinghand.png";
 import usePinkify from "../hooks/usePinkify";
-
-import {ReactComponent as LinkedinIcon} from "../assets/linkedin.svg";
 
 export default function Hero (){
     const { translations, language } = useContext(LanguageContext);
@@ -25,7 +25,7 @@ export default function Hero (){
 
     return(
         <>
-        <main className="px-10 py-1 md:px-60 md:pb-20 gap-4 md:gap-x-20 grid md:grid-cols-3 items-center ">
+        <main className="px-10 py-1 md:px-20 lg:px-60 md:pb-20 gap-4 md:gap-x-20 grid md:grid-cols-3 items-center ">
             <section className="md:col-span-2 md:pl-10">
                 <h1 className="flex text-2xl mt-4 tracking-wider">{greeting} <img src={emoji} alt="" /></h1>
                 <div className="relative">
@@ -36,13 +36,9 @@ export default function Hero (){
                         <div className="bg-pink2 rounded-md absolute w-24 md:w-40 h-4 md:h-8 left-0 md:-left-5 bottom-[-2rem] top-4 md:top-10"></div>
                     </div> 
                 </div>
-                <div className="flex gap-4 mt-4">
-                    <a className={theme === "dark" ? " fill-white" : "fill-black"} href="" target="_blank">
-                        <LinkedinIcon />
-                    </a>
-                    <a href="" target="_blank">
-                        <img src={githubLogo} alt="Github logo" />
-                    </a>
+                <div className=" flex gap-4 mt-4">
+                    <a href="/">{theme === "dark" ? <img src={linkedinbeyaz} alt="" /> : <img src={linkedinsiyah} alt="" />}</a>
+                    <a href="/">{theme === "dark" ? <img src={githubbeyaz} alt="" /> : <img src={githubsiyah} alt="" />}</a>
                 </div>
                 <div className="py-4 tracking-wide">
                     <p className="my-2">
