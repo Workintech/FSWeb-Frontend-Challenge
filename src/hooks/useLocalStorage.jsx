@@ -9,9 +9,9 @@ export default function useLocalStorage(key, defaultValue) {
       if (localVal === null) {
         return defaultValue;
       } else {
-        console.log("defaultValue TYPE:", typeof defaultValue);
-        console.log("LOCALVAL TYPE:",typeof localVal);
-        console.log("LOCALVAL:", localVal);
+        //console.log("defaultValue TYPE:", typeof defaultValue);
+        //console.log("LOCALVAL TYPE:",typeof localVal);
+        //console.log("LOCALVAL:", localVal);
         return JSON.parse(localVal);
       }
     } catch (error) {

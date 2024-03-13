@@ -7,6 +7,7 @@ import linkedinLogo from "../assets/linkedin.svg";
 import githubLogo from "../assets/github.svg";
 import profilePic from "../assets/images/foto.jpg";
 import emoji from "../assets/images/wavinghand.png";
+import usePinkify from "../hooks/usePinkify";
 
 export default function Hero (){
     const { translations, language } = useContext(LanguageContext);
@@ -15,6 +16,10 @@ export default function Hero (){
 
     const {greeting, intro, social1, social2, social3} = translations;
     const { theme } = useTheme();
+
+    const pinkifiedSocial1Indices = language === 'en' ? [1, 3, 4, 5, 6, 7] : [2, 4, 5, 7, 8];
+    const pinkifiedSocial1 = usePinkify(social1, pinkifiedSocial1Indices);
+    
 
     return(
         <>
@@ -37,9 +42,14 @@ export default function Hero (){
                         <img src={githubLogo} className="logo github" alt="Github logo" />
                     </a>
                 </div>
-                <div className="py-4">
-                    <p className="my-2" >{social1}</p>
-                    <p>{social2} <a href="http://">{social3}</a></p> 
+                <div className="py-4 tracking-wide">
+                    <p className="my-2">
+                        {pinkifiedSocial1}
+                    </p>
+                    <p className="my-2">
+                        {social1.includes("freelance") && ( <>Şu an <span className="text-pink2">Freelance</span> olarak{" "}<span className="text-pink2">UX, UI ve Web Tasarımı</span> yapıyorum.</>)}
+                    </p>
+                    <p>{social2} <a className="underline text-pink2 tracking-wider" href="http://">{social3}</a></p> 
                 </div>
             </section>
             <section className="items-start py-20 relative">
