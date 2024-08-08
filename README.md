@@ -31,19 +31,20 @@ Not\* Bu dökümanın en sonunda da, sunumda seni değerlendireceğimiz başlık
 
 - [ ] Tasarımdaki her bir section için ayrı bir component oluşturun.
 - [ ] Her component'in style'ını ayarlayın.
-- [ ] Verilerinizi kendi oluşturduğunuz, mock (örnek) verileri statik bir json dosyasından çekin.
+- [ ] Verilerinizi kendi oluşturduğunuz verileri statik bir json dosyasından çekin.
 - [ ] Dark Mode tasarımı da entegre edin.
 - [ ] Türkçe-İngilizce içerik oluşturun.
 - [ ] Responsive özelleştirmelerini yapın. Mobil ve tablet gibi farklı cihaz boyutları için, tasarımda biraz değişiklik yapabilirsin. Buralarda insiyatif kullanabilirsin.
 
 #### Önemli Notlar!
 
-- Tasarımı birebir uygulamalısın.
+- Dil yönetiminde i18n gibi bir paket kullanmanızı ASLA istemiyoruz. useContext veya Redux kullanarak, veri yönetimi, ve görüntüleme katmanının izole olduğu bir proje yapabildiğinizi görmek istiyoruz.
+-  Tasarımı birebir uygulamalısın.
   - Resimleri ve projeleri kendi projelerinle güncelleyebilirsin. Yine de kesinlikle **renkler ve yerleşimde** değişiklik istemiyoruz.
   - Sunumdan sonra dilersen sonrasında kendi portföyün için özelleştirebilirsin.
 - Axios ile *https://reqres.in/api/workintech* (yereldeki data.js, POST) veya başka bir sahte API servisi ile dış kaynakla iletişim kurabildiğini gösterebilmelisin. Dış servis ile iletişim kurmayı projenin en sonuna atın. Önceliği en düşük kısımlardan biri bu. Daha detaylı dış servis kurmayı ileride öğreneceksiniz.
 
-https://mockapi.io veya benzeri bir servisle, projeniz bitmeden önce zaman kaybedip, asıl yapmanız gerekenleri öncelik sırasına göre yapmayıp, talimat dışına çıkarsanız düşük not alabilirsiniz.
+https://mockapi.io veya benzeri bir servisle, projeniz bitmeden önce zaman kaybedip, asıl yapmanız gerekenleri öncelik sırasına göre yapmayıp, talimat dışına çıkarsanız düşük not alabilirsiniz. Data için reqres.in dışında bir servis kullanmaya zaman harcayanlar genelde yetiştiremiyor. Sunumdan sonra ayrıca isterseniz bakabilirsiniz. 
 
 > Böylece backende geçince de yönetim paneli yazıp, hem kod kalitesi hem yapabildiğiniz her şeyi tek projede birleştirmiş olacaksınız.
 
@@ -54,7 +55,7 @@ graph LR
 A((Start)) -->B{Dil?}-- EN --> C([EN Mock Data])
 A --> G{Renk?}
 B-- TR --> D([TR Mock Data])
-C --> E[Axios] -- POST --> I([Mock API])
+C --> E[Axios] -- POST --> I([Reqres API])
 I -- Response --> E --> F((Uygulama))
 G -- Açık/Koyu --> H([Görsel Değişiklik]) --> F
 D --> E
